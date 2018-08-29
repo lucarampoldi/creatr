@@ -6,6 +6,7 @@ class Onboarding::BiosController < ApplicationController
   def update
     @user = User.find(params[:user_id])
     @user.update(user_params)
+    @user.save!
     redirect_to onboarding_skills_path
   end
 

@@ -3,7 +3,9 @@
     <h4> Skills</h4>
   </div>
   <div class="skill-list">
-    <p>#Ruby #Rails #HTML #CSS #JavaScript #Agile</p>
+    <% user.skill_list.each do |skill| %>
+      <span>#<%= skill %></span>
+    <% end %>
   </div>
 </div>
 

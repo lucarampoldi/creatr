@@ -6,7 +6,7 @@
     </div>
   </div>
 
-    <img src="<%= image_path('Andre.jpg') %>" alt="" class="user-photo">
+  <%= image_tag user.photo_url, class: "user-photo" %>
 
   <div class="bottom-banner">
 
@@ -23,32 +23,22 @@
 <!-- goals -->
 
  <div class="goals-container">
-
   <div class="goal">
     <h4>Goals</h4>
   </div>
 
   <div class="goal-def">
-    <p>Looking for a Mentor</p>
+    <p><%= user.description %></p>
   </div>
 </div>
 
-
 <div class="goals-des-container">
 
-
+  <% user.goal_list.each do |goal| %>
     <div class="goals-button">
-      <div class="btn-text"> #startup </div>
+      <div class="btn-text"> <%= goal %> </div>
     </div>
-
-
-    <div class="goals-button">
-      <div class="btn-text"> #finance </div>
-    </div>
-
-    <div class="goals-button">
-      <div class="btn-text"> #berlin</div>
-    </div>
+  <% end %>
 
 </div>
 

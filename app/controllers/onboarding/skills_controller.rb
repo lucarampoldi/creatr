@@ -8,6 +8,6 @@ class Onboarding::SkillsController < ApplicationController
     @user.skill_list.add(params[:user][:skill_list], parse: true)
     @user.save!
 
-    redirect_to user_path(@user)
+    redirect_to onboarding_goals_path
   end
 end

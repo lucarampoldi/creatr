@@ -1,0 +1,26 @@
+<%= simple_form_for(@user, url: onboarding_info_path(@user)) do |f| %>
+    <%= f.input :first_name,
+                label: false,
+                input_html: {
+                  value: f.object.first_name,
+                  placeholder: "Name",
+                }
+    %>
+    <%= f.input :last_name,
+                label: false,
+                input_html: {
+                  value: f.object.last_name,
+                  placeholder: "surname",
+                }
+    %>
+    <%= f.input :location,
+                label: false,
+                input_html: {
+                  value: f.object.location,
+                  placeholder: "your address",
+                }
+    %>
+
+
+    <%= f.submit "Proceed to Avatar" %>
+  <% end  %>

@@ -1,3 +1,12 @@
+  <%= @user.first_name %>
+  <%= @user.last_name %>
+  <%= @user.location %>
+
+  <%= @user.photo %>
+
+  <%= link_to "Not you? Correct your info", onboarding_avatars_path %>
+
+
 <%= simple_form_for(@user, url: onboarding_bio_path(@user)) do |f| %>
     <%= f.input :description,
                 as: :text,

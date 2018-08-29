@@ -1,6 +1,11 @@
 source 'https://rubygems.org'
 ruby '2.4.4'
 
+#photouploader
+gem 'cloudinary'
+gem 'carrierwave', '~> 1.2'
+
+
 gem 'bootsnap', require: false
 gem 'devise'
 gem 'jbuilder', '~> 2.0'
@@ -16,6 +21,8 @@ gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
+
+gem 'acts-as-taggable-on', '~> 6.0'
 
 group :development do
   gem 'web-console', '>= 3.3.0'

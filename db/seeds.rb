@@ -145,5 +145,3 @@ goal_name = [
 ]
 
 goal_name.each {|name| Goal.create!(title: name)}
-
-

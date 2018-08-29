@@ -1,3 +1,134 @@
+.profil_container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: orange;
+  height: 50vh;
+  .top-banner{
+    height: 50%;
+    flex-basis: 50%;
+    flex-shrink: 0;
+    background-image: linear-gradient(to top, #3cc8b9, #00a1be, #0077c2, #0049b2, #100181);
+
+
+
+    .user-title {
+      height: 20%;
+      font-size: 25px;
+      text-align: center;
+      color: white;
+      margin-top: 50px
+    }
+  }
+
+  .bottom-banner {
+    background-color: white;
+    padding: 40px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .user-des {
+       margin-top: 30px;
+       text-align: center;
+      h1 {
+
+        font-size: 16px;
+        color: 3b3b3b;
+        line-height: 1.2;
+      }
+
+    }
+  }
+
+
+
+  .user-photo {
+    position: absolute;
+    top: calc(50% - 90px);
+    left: calc(50% - 70px);
+    background-color: gray;
+    border: 1px solid white;
+    object-fit: cover;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+  }
+}
+
+
+hr {
+  background-color:#c4c4c4;
+  color: white;
+  border:#FF0000;
+  height:1px;
+  margin: 0;
+}
+
+
+//goals
+.goals-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 13vh;
+
+  .goal h4{
+    height: 20%;
+    font-size: 25px;
+    text-align: center;
+    color: #c4c4c4;
+    margin-top: 25px
+  }
+
+  .goal-def p{
+    text-align: center;
+    color: #3b3b3b;
+  }
+}
+
+.goals-des-container{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: white;
+  height: 10vh;
+  padding: 15px 50px;
+}
+
+.goal h4{
+  color: #c4c4c4;
+}
+
+
+.goals-button{
+  background-image: linear-gradient(to right, #003f98, #006bbc, #0095cd, #00bcd2, #4ce1d1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  height: 30px;
+    .btn-text {
+      color: white;
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+=======
 .banner {
   color: white;
   text-align: center;

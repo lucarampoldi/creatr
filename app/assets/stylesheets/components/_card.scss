@@ -1,0 +1,45 @@
+//skills-card
+.skills-container{
+background-color: white;
+padding: 10px;
+}
+.skills {
+  padding: 0 10px;
+  h4{
+    color: #c4c4c4;
+  }
+}
+;
+.skill-list{
+  padding: 0 10px;
+
+  span {
+    color: #40E0D0;
+
+  }
+}
+
+
+//certificates-card
+
+
+.certificate-container{
+  background-color: white;
+  padding: 10px 20px;
+}
+.certificates{
+
+
+
+ h4{
+  color: #c4c4c4;
+}
+
+}
+.certificate-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}

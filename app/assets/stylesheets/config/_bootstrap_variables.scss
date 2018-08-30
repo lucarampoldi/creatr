@@ -11,16 +11,24 @@ $font-size-base: 18px;
 
 // Colors
 $gray-base:       $gray;
-$brand-primary:   $blue;
+$brand-primary:   #5AB2B6;
 $brand-success:   $green;
 $brand-info:      $yellow;
 $brand-danger:    $red;
 $brand-warning:   $orange;
 
 // Buttons & inputs' radius
-$border-radius-base:  2px;
-$border-radius-large: 2px;
-$border-radius-small: 2px;
+$border-radius-base:  8px;
+$border-radius-large: 8px;
+$border-radius-small: 8px;
+$btn-primary-border: darken($brand-primary, 1%) !default;
+
+// Global body background color override
+$body-bg: white;
+
+// Forms override
+$input-border-radius: 8px;
+$input-border: lightgrey;
 
 
 // Patch to make simple_form compatible with bootstrap 3

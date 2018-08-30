@@ -1,31 +1,33 @@
+<div class="container">
+  <div class="onboarding-heading text-center">
+    <h1 class="onboarding-title">Your Bio</h1>
+    <p class="onboarding-description no-padding">
+      Hey stranger!
+    </p>
+  </div>
 
-<div class="bios_show_page">
-  <%= @user.first_name %>
-  <%= @user.last_name %>
-  <%= @user.location %>
-
-  <%= @user.photo %>
-
-  <%= link_to "Not you? Correct your info", onboarding_avatars_path %>
-
-<h1 class="bios-title"></h1>
-  <%= simple_form_for(@user, url: onboarding_bio_path(@user)) do |f| %>
-      <%= f.input :description,
-                  as: :text,
-                  label: false,
-                  input_html: {
-                    value: f.object.description,
-                    placeholder: "Tell us about yourself",
-                  }
-      %>
-      <%= f.input :achievement,
-                  as: :text,
-                  label: false,
-                  input_html: {
-                    value: f.object.achievement,
-                    placeholder: "Your most important achievement",
-                  }
-      %>
-      <%= f.submit "Proceed to skills" %>
-  <% end %>
+  <%#= Bio form %>
+  <div class="row">
+    <div class="col-xs-10 col-xs-offset-1">
+      <%= simple_form_for(@user, url: onboarding_bio_path(@user)) do |f| %>
+          <%= f.input :description,
+                      as: :text,
+                      label: "Bio",
+                      input_html: {
+                        value: f.object.description,
+                        placeholder: "What's your story?",
+                      }
+          %>
+          <%= f.input :achievement,
+                      as: :text,
+                      input_html: {
+                        value: f.object.achievement,
+                        placeholder: "Your proudest moment?",
+                      }
+          %>
+          <%= f.submit "Proceed to skills", class: "btn btn-primary btn-block gradient" %>
+      <% end %>
+      <%= link_to "back to avatar", onboarding_avatars_path, class: "onboarding-link" %>
+    </div>
+  </div>
 </div>

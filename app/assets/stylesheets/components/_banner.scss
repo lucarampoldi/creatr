@@ -3,12 +3,13 @@
   display: flex;
   flex-direction: column;
   background-color: orange;
-  height: 50vh;
+  height: 60vh;
   .top-banner{
     height: 50%;
     flex-basis: 50%;
     flex-shrink: 0;
-    background: #4CA5E4;
+    background: #5AB2B7 ;
+
 
   //background: rgb(6,122,246);
   //background: linear-gradient(90deg, rgba(6,122,246,1) 0%, rgba(38,204,255,1) 35%, rgba(71,255,211,1) 100%);
@@ -84,57 +85,7 @@ hr {
 }
 
 
-//goals
-.goals-container {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  height: 13vh;
-
-  .goal h4{
-    height: 20%;
-    font-size: 25px;
-    text-align: center;
-    color: #c4c4c4;
-    margin-top: 25px
-  }
-
-  .goal-def p{
-    text-align: center;
-    color: #3b3b3b;
-  }
-}
-
-.goals-des-container{
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  background-color: white;
-  height: 10vh;
-  padding: 15px 50px;
-}
-
-.goal h4{
-  color: #c4c4c4;
-}
-
-
-.goals-button{
- background: white;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0px 12px;
-  border: 1px solid #4CA5E4;
-  border-radius: 20px;
-  font-size: 14px;
-  height: 30px;
-    .btn-text {
-      color: #4CA5E4;
-
-  }
-}
+//banner landing page
 
 .banner {
   color: white;

@@ -12,31 +12,36 @@ padding: 10px;
 ;
 .skill-list{
   padding: 0 10px;
-
   span {
-    color: #40E0D0;
-
+  color: #4CA5E4;
   }
 }
-
-
-//certificates-card
-
-
+// certificates start here <<<<<<<<<<<<<
 .certificate-container{
   background-color: white;
   padding: 10px 20px;
 }
+
 .certificates{
-
-
-
  h4{
   color: #c4c4c4;
 }
 
 }
 .certificate-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+
+// platforms start here <<<<<<<<<<
+.platform-container{
+  background-color: white;
+  padding: 10px 20px;
+}
+.platform-list{
   display: flex;
   flex-direction: column;
   justify-content: center;

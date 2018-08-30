@@ -1,1 +1,8 @@
-<h1>User Index</h1>
+<%= @users.each do |user| %>
+<%= render "shared/banner-profil", user: user %>
+<%= render "shared/skills-card", user: user %>
+<%= render "shared/certificate-card", user: user %>
+<%= render "shared/onlineplatform", user: user %>
+<% end %>
+
+

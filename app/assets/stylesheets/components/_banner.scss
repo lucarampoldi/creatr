@@ -8,9 +8,28 @@
     height: 50%;
     flex-basis: 50%;
     flex-shrink: 0;
-    background-image: linear-gradient(to top, #3cc8b9, #00a1be, #0077c2, #0049b2, #100181);
+    background: #4CA5E4;
 
+  //background: rgb(6,122,246);
+  //background: linear-gradient(90deg, rgba(6,122,246,1) 0%, rgba(38,204,255,1) 35%, rgba(71,255,211,1) 100%);
+  //animation: color-me-in 8s steps(3) infinite;
 
+//}
+//@keyframes color-me-in {
+  /* You could think of as "step 1" */
+  //0%{
+    //background: rgb(6,122,246);
+    //background: linear-gradient(90deg, rgba(6,122,246,1) 0%, rgba(38,204,255,1) 35%, rgba(71,255,211,1) 100%);
+  //}
+  //50% {
+    //background: rgb(71,255,211);
+    //background: linear-gradient(90deg, rgba(71,255,211,1) 0%, rgba(38,204,255,1) 35%, rgba(6,122,246,1) 100%);
+  //}
+  //100%{
+    //background: rgb(6,122,246);
+    //background: linear-gradient(90deg, rgba(6,122,246,1) 0%, rgba(38,204,255,1) 35%, rgba(71,255,211,1) 100%);
+  //}
+//}
 
     .user-title {
       height: 20%;
@@ -20,6 +39,7 @@
       margin-top: 50px
     }
   }
+ }
 
   .bottom-banner {
     background-color: white;
@@ -52,7 +72,7 @@
     width: 150px;
     border-radius: 50%;
   }
-}
+
 
 
 hr {
@@ -100,16 +120,18 @@ hr {
 
 
 .goals-button{
-  background-image: linear-gradient(to right, #003f98, #006bbc, #0095cd, #00bcd2, #4ce1d1);
+ background: white;
+
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0px 12px;
+  border: 1px solid #4CA5E4;
   border-radius: 20px;
   font-size: 14px;
   height: 30px;
     .btn-text {
-      color: white;
+      color: #4CA5E4;
 
   }
 }

@@ -1,6 +1,12 @@
 <h2>Your skills</h2>
 <p>
   <%= @user.description %>
+  <%= @user.achievement %>
+  <%= @user.first_name %>
+  <%= @user.last_name %>
+  <%= @user.location %>
+  <%= @user.photo %>
+
 </p>
 <p>
   <%= link_to "Correct your bio?", onboarding_bios_path  %>

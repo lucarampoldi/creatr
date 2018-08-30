@@ -11,6 +11,7 @@ User.create!(
             title:"Founder & Cancellor, CODE University of Applied Sciences",
             description:"Serial entrepreneur, software engineer and investor. Founded multiple startups, i.e. sevenload (sold to Hubert Burda Media), and Lebenslauf.com(sodl to XING)",
             location:"Berlin, Germany",
+            goal_list:"Invest in Team / Project, Exchange best practises, Get inspired",
             industry:"Software & IT",
             linkedin_url:"https://www.linkedin.com/in/thomasbachem/",
             github_url:"https://github.com/impactpractise/",

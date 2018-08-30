@@ -1,8 +1,27 @@
-<%= @users.each do |user| %>
-<%= render "shared/banner-profil", user: user %>
-<%= render "shared/skills-card", user: user %>
-<%= render "shared/certificate-card", user: user %>
-<%= render "shared/onlineplatform", user: user %>
+  <!-- need 3 buttons (1 profile, 1 creatrlogo aka match, 1 chats) -->
+<% @users.each do |user| %>
+  <div class="profile-card">
+    <header>
+      <%= user.first_name %>
+      <%= user.last_name %>
+      <%= image_tag user.photo_url %>
+      <%= user.title %>
+    </header>
+
+    <div class="profile-bio">
+      <%= user.description.first(50) %>
+      <%= user.location %>
+      <%= user.goal_list %>
+      <%= user.skill_list %>
+
+      <div class="swipe-button">
+        <i class="fab fa-connectdevelop">
+
+
+        </i>
+      </div>
+
+    </div>
+
+  </div>
 <% end %>
-
-

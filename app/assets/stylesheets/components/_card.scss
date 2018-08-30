@@ -12,6 +12,7 @@ padding: 10px;
 }
 
 .skill-list{
+
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -82,21 +83,16 @@ padding: 10px;
     .btn-text {
       color: #5AB2B7;
 
+
   }
 }
-
-
-//certificates-card
-
-
+// certificates start here <<<<<<<<<<<<<
 .certificate-container{
   background-color: white;
   padding: 10px 20px;
 }
+
 .certificates{
-
-
-
  h4{
   color: #c4c4c4;
 }
@@ -109,6 +105,7 @@ padding: 10px;
   align-items: center;
   padding: 0 10px;
 }
+
 
 
 
@@ -145,4 +142,17 @@ padding: 10px;
   justify-content: space-between;
   align-items: center;
   padding: 0 50px;
+
+// platforms start here <<<<<<<<<<
+.platform-container{
+  background-color: white;
+  padding: 10px 20px;
+}
+.platform-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+
 }

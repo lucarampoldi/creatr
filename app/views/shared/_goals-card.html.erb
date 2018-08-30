@@ -1,0 +1,23 @@
+<!-- goals -->
+
+ <div class="goals-container">
+  <div class="goal">
+    <h4>Goals</h4>
+  </div>
+
+  <div class="goal-def">
+    <h1><%= user.description %></h1>
+  </div>
+</div>
+
+<div class="goals-des-container">
+
+  <% user.goal_list.each do |goal| %>
+    <div class="goals-button">
+      <div class="btn-text"> <%= goal %> </div>
+    </div>
+  <% end %>
+
+</div>
+
+<hr>

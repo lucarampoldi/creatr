@@ -7,14 +7,80 @@ padding: 10px;
   padding: 0 10px;
   h4{
     color: #c4c4c4;
+    text-align: center;
   }
 }
-;
+
 .skill-list{
-  padding: 0 10px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: white;
+  padding: 15px 50px;
 
   span {
-    color: #4CA5E4;
+    color: #5AB2B7;
+    margin-right: 3px;
+
+  }
+}
+
+//goals-card
+
+.goals-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+
+
+  .goal h4{
+    height: 20%;
+    font-size: 25px;
+    text-align: center;
+    color: #c4c4c4;
+
+  }
+
+  .goal-def h1{
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: #3b3b3b;
+  }
+}
+
+.goals-des-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 15px 50px;
+}
+
+.goal h4{
+  color: #c4c4c4;
+
+}
+
+
+.goals-button{
+  background: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 12px;
+  border: 1px solid #5AB2B7;
+  border-radius: 20px;
+  font-size: 14px;
+  height: 30px;
+  margin: 5px 10px;
+    .btn-text {
+      color: #5AB2B7;
 
   }
 }
@@ -42,4 +108,41 @@ padding: 10px;
   justify-content: center;
   align-items: center;
   padding: 0 10px;
+}
+
+
+
+
+//achievement-card
+.container-achievement{
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+  h4{
+    font-size: 23px;
+    color: #c4c4c4;
+  }
+}
+.avievement-description{
+  text-align: center;
+  h1{
+    font-size: 16px;
+    line-height: 1.2;
+
+  }
+}
+
+//social-links
+.social-links-container{
+  background-color: white;
+  padding: 10px;
+}
+
+.social-links{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
 }

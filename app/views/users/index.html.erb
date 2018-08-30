@@ -4,12 +4,12 @@
     <header>
       <%= user.first_name %>
       <%= user.last_name %>
-      <%= image_tag user.photo_url %>
+      <%#= image_tag user.photo_url %>
       <%= user.title %>
     </header>
 
     <div class="profile-bio">
-      <%= user.description.first(50) %>
+      <%= user.description %>
       <%= user.location %>
       <%= user.goal_list %>
       <%= user.skill_list %>

@@ -3,4 +3,9 @@
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(3, auto);
   grid-auto-flow: row;
+  span {
+  background-color: orange;
+  margin: 5px;
+  border-radius: 200px;
+  }
 }

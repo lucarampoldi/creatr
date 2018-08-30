@@ -45,7 +45,7 @@ padding: 10px;
 
   }
 
-  .goal-def h1{
+  .goal-def h5{
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
@@ -142,17 +142,17 @@ padding: 10px;
   justify-content: space-between;
   align-items: center;
   padding: 0 50px;
-
+}
 // platforms start here <<<<<<<<<<
 .platform-container{
   background-color: white;
   padding: 10px 20px;
-}
+  }
+
 .platform-list{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0 10px;
-
-}
+  }

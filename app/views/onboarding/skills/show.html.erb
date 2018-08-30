@@ -1,30 +1,29 @@
-<div class="skills_show_page">
-  <h2 class="skills-title">Your skills</h2>
-  <p>
-    <%#= @user.description %>
-    <%#= @user.achievement %>
-    <%#= @user.first_name %>
-    <%#= @user.last_name %>
-    <%#= @user.location %>
-    <%#= @user.photo %>
+<div class="container">
+  <div class="onboarding-heading text-center">
+    <h1 class="onboarding-title">Your Skills</h1>
+    <p class="onboarding-description no-padding">
+      Add skills to your profile :D
+    </p>
+  </div>
 
-  </p>
-  <p>
-    <%= link_to "Correct your bio?", onboarding_bios_path  %>
-  </p>
-
-  <%= simple_form_for(@user, url: onboarding_skill_path(@user)) do |f| %>
-      <%= f.input :skill_list,
-                  label: false,
-                  input_html: {
-                    value: f.object.skill_list.join(", "),
-                    placeholder: "Enter your skills",
-                    data: {
-                      list: Skill.pluck(:title).join(","),
-                      multiple: ""
+  <%#= Bio form %>
+  <div class="row">
+    <div class="col-xs-10 col-xs-offset-1">
+      <%= simple_form_for(@user, url: onboarding_skill_path(@user)) do |f| %>
+          <%= f.input :skill_list,
+                    label: false,
+                    input_html: {
+                      value: f.object.skill_list.join(", "),
+                      placeholder: "Tech, Startups...",
+                      data: {
+                        list: Skill.pluck(:title).join(","),
+                        multiple: ""
+                      }
                     }
-                  }
-      %>
-      <%= f.submit "Proceed to goals" %>
-  <% end %>
+        %>
+        <%= f.submit "Proceed to goals", class: "btn btn-primary btn-block gradient" %>
+      <% end %>
+      <%= link_to "back to bio", onboarding_bios_path, class: "onboarding-link" %>
+    </div>
+  </div>
 </div>

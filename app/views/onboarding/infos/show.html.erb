@@ -1,26 +1,37 @@
-<%= simple_form_for(@user, url: onboarding_info_path(@user)) do |f| %>
-    <%= f.input :first_name,
-                label: false,
-                input_html: {
-                  value: f.object.first_name,
-                  placeholder: "Name",
-                }
-    %>
-    <%= f.input :last_name,
-                label: false,
-                input_html: {
-                  value: f.object.last_name,
-                  placeholder: "surname",
-                }
-    %>
-    <%= f.input :location,
-                label: false,
-                input_html: {
-                  value: f.object.location,
-                  placeholder: "your address",
-                }
-    %>
+<div class="container">
+  <div class="onboarding-heading text-center">
+    <h1 class="onboarding-title">Personal info</h1>
+    <p class="onboarding-description">
+      We want to get to know you better
+    </p>
+  </div>
+
+  <%#= Infos form %>
+  <div class="row">
+    <div class="col-xs-10 col-xs-offset-1">
+      <%= simple_form_for(@user, url: onboarding_info_path(@user)) do |f| %>
+          <%= f.input :first_name,
+                      input_html: {
+                        value: f.object.first_name,
+                        placeholder: "Elon",
+                      }
+          %>
+          <%= f.input :last_name,
+                      input_html: {
+                        value: f.object.last_name,
+                        placeholder: "Musk",
+                      }
+          %>
+          <%= f.input :location,
+                      input_html: {
+                        value: f.object.location,
+                        placeholder: "Mars",
+                      }
+          %>
 
 
-    <%= f.submit "Proceed to Avatar" %>
-  <% end  %>
+          <%= f.submit "Save and proceed to Avatar", class: "btn btn-primary btn-block gradient" %>
+        <% end  %>
+    </div>
+  </div>
+</div>

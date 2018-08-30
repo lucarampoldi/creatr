@@ -1,3 +1,5 @@
+
+<div class="bios_show_page">
   <%= @user.first_name %>
   <%= @user.last_name %>
   <%= @user.location %>
@@ -6,23 +8,24 @@
 
   <%= link_to "Not you? Correct your info", onboarding_avatars_path %>
 
-
-<%= simple_form_for(@user, url: onboarding_bio_path(@user)) do |f| %>
-    <%= f.input :description,
-                as: :text,
-                label: false,
-                input_html: {
-                  value: f.object.description,
-                  placeholder: "Tell us about yourself",
-                }
-    %>
-    <%= f.input :achievement,
-                as: :text,
-                label: false,
-                input_html: {
-                  value: f.object.achievement,
-                  placeholder: "Your most important achievement",
-                }
-    %>
-    <%= f.submit "Proceed to skills" %>
-<% end %>
+<h1 class="bios-title"></h1>
+  <%= simple_form_for(@user, url: onboarding_bio_path(@user)) do |f| %>
+      <%= f.input :description,
+                  as: :text,
+                  label: false,
+                  input_html: {
+                    value: f.object.description,
+                    placeholder: "Tell us about yourself",
+                  }
+      %>
+      <%= f.input :achievement,
+                  as: :text,
+                  label: false,
+                  input_html: {
+                    value: f.object.achievement,
+                    placeholder: "Your most important achievement",
+                  }
+      %>
+      <%= f.submit "Proceed to skills" %>
+  <% end %>
+</div>

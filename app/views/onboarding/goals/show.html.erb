@@ -25,7 +25,18 @@
                                    :last, :last
       %>
     </div>
+
+
+   <%= f.input :goal_description,
+                label: false,
+                input_html: {
+                  value: f.object.location,
+                  placeholder: "Add a goal description",
+                }
+    %>
     <div>
       <%= f.submit "Start Matching" %>
     </div>
+
 <% end %>
+

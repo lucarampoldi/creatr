@@ -158,3 +158,144 @@ padding: 10px;
   align-items: center;
   padding: 0 10px;
   }
+
+
+//index-card
+
+.user-card-container{
+
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  margin: 20px;
+  border: 1px solid #C4C4C4;
+}
+
+.top-part{
+
+  display: flex;
+  flex-direction: column;
+  height: 30vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-card-avatar{
+
+    top: calc(50% - 227px);
+    left: calc(50% - 50px);
+    background-color: white;
+    border: 1px solid gray;
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+  }
+
+.user-box {
+  text-align: center;
+
+  h4.user-box-heading {
+    color: #202020;
+  }
+
+  h5.user-box-title {
+    color: #202020;
+  }
+}
+
+.bottom-part{
+  display: flex;
+  flex-direction: column;
+  background-color:#5AB2B7 ;
+  text-align: center;
+  padding: 20px;
+    p.goal-description-user{
+    color: white;
+    font-size: 15px;
+  }
+}
+
+.skill-part{
+  display: flex;
+  flex-direction: column;
+}
+.skills-user-list{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: white;
+  padding: 5px 10px;
+
+  span {
+    color: #5AB2B7;
+    margin-right: 3px;
+    font-size: 16px;
+  }
+}
+
+.match-container{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 90px;
+}
+
+.disliker{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #5AB2B7;
+  i {
+    color: #F42323;
+  }
+  &:focus {
+    background-color: #5AB2B7;
+    outline: none;
+    text-decoration: none;
+    i{
+      color: white;
+    }
+  }
+}
+.liker{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #5AB2B7;
+  text-decoration: none;
+  i {
+    color: #3fbd23;
+
+  }
+  &:focus {
+    background-color:#5AB2B7 ;
+    color: white;
+    outline: none;
+    i {
+      color: white;
+
+    }
+  }
+}
+
+.fa-check{
+  margin-left: 5px;
+  &:focus{
+    color:white;
+  }
+}

@@ -1,27 +1,6 @@
   <!-- need 3 buttons (1 profile, 1 creatrlogo aka match, 1 chats) -->
+
 <% @users.each do |user| %>
-  <div class="profile-card">
-    <header>
-      <%= user.first_name %>
-      <%= user.last_name %>
-      <%#= image_tag user.photo_url %>
-      <%= user.title %>
-    </header>
-
-    <div class="profile-bio">
-      <%= user.description %>
-      <%= user.location %>
-      <%= user.goal_list %>
-      <%= user.skill_list %>
-
-      <div class="swipe-button">
-        <i class="fab fa-connectdevelop">
-
-
-        </i>
-      </div>
-
-    </div>
-
-  </div>
+  <%= render "shared/index-card", user: user %>
 <% end %>
+

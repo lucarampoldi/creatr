@@ -7,7 +7,6 @@
       <h4> Product Designer</h4>
     </div>
   </div>
-
   <%= image_tag user.photo_url, class: "user-photo" %>
 
   <div class="bottom-banner">
@@ -19,6 +18,22 @@
     </div>
   </div>
 
+  <div>
+    <%= form_for(@like) do |f| %>
+      <%= f.text_field :receiver_id, value: @user.id, type: :hidden %>
+      <%= f.submit "Like" %>
+    <% end %>
+
+    |
+
+    <%= link_to "Back", "#" %>
+
+    |
+
+    <% if @user.liked_users.exists?(current_user.id) %>
+      HE LIKES US
+    <% end %>
+  </div>
 </div>
 
 

@@ -4,6 +4,10 @@ Rails.application.routes.draw do
 
   resources :users, only: [:show, :index, :update]
 
+  resources :likes, only: :create
+
+  resources :matches, only: :show
+
   namespace :onboarding do
     get "skills", to: "skills#show"
     patch "skills/:user_id", to: "skills#update", as: "skill"

@@ -1,3 +1,5 @@
+Like.destroy_all
+Match.destroy_all
 User.destroy_all
 Skill.destroy_all
 Goal.destroy_all
@@ -8,7 +10,7 @@ u1 = User.create!(
                 photo: File.open(Rails.root + "app/assets/images/u1.jpeg"),
                 email:"tombachem@example.com",
                 password:"123456",
-                title:"Founder & Cancellor, CODE University of Applied Sciences",
+                title:"Cancellor of CODE University",
                 description:"Serial entrepreneur, software engineer and investor.",
                 location:"Berlin, Germany",
                 industry:"Software & IT",
@@ -25,8 +27,8 @@ u2 = User.create!(
                 photo: File.open(Rails.root + "app/assets/images/u2.jpeg"),
                 email:"souravnandi@example.com",
                 password:"123456",
-                title:"I tell Stories with Statistics & Data | IITK | AIR 1 in DU | Certified by Microsoft, Google, Oxford | Proud Indian",
-                description:"Data Scientist, Stastics MSc",
+                title:"Data scientist",
+                description:"I tell Stories with Statistics & Data | IITK | AIR 1 in DU | Certified by Microsoft, Google, Oxford | Proud Indian",
                 location:"Kolkata, West Bengal, Indien",
                 industry:"Software & IT",
                 goal_description: "Hire developers in Ruby and JS",
@@ -42,7 +44,7 @@ u3 = User.create!(
                 photo:File.open(Rails.root + "app/assets/images/u3.jpeg"),
                 email:"mohamedibrahim@example.com",
                 password:"123456",
-                title:"Deep learning research assistant | Full stack web and iOS developer | Hackathon enthusiast",
+                title:"Deep learning research assistant",
                 description:"Hi, My name is Mohamed Ibrahim and I'm a 3rd year software engineering student at the University of Ontario Institute of Technology. If you have any questions feel free to reach me at mohamed.ibrahim1@uoit.net",
                 location:"Toronto, Canada",
                 industry:"Software & IT",
@@ -59,7 +61,7 @@ u4 = User.create!(
                 photo:File.open(Rails.root + "app/assets/images/u4.jpeg"),
                 email:"samsonwilliams@example.com",
                 password:"123456",
-                title:"Problem Solving Educator: Fintech | Blockchain | Crowdfunding | Humans",
+                title:"Educator in Fintech, Blockchain, Crowdfunding",
                 description:"Devious thinker whose application of common sense is often mistaken for genius. If I have a talent, its helping smart and amazing people, be even more smart and amazing. #AllWeDoIsWin",
                 location:"Washington D.C.",
                 industry:"Human Recources, Finance",
@@ -76,7 +78,7 @@ u5 = User.create!(
                 photo:File.open(Rails.root + "app/assets/images/u5.jpeg"),
                 email:"henrikchristiansen@example.com",
                 password:"123456",
-                title:"Leader, Advisor, Speaker, Investor, Mentor and Eco-system builder",
+                title:"Investor, Mentor and Eco-system builder",
                 description:"I create mind-blowing educational experiences around decentralised technology and blockchain and have an endless amount of curiosity for other human beings.",
                 location:"United Arabic Emirates",
                 industry:"Blockchain, Decentral Economy",
@@ -93,7 +95,7 @@ u6 = User.create!(
                 photo:File.open(Rails.root + "app/assets/images/u6.jpeg"),
                 email:"elliott-callender@example.com",
                 password:"123456",
-                title:"Nodeunlock | Creator of Blockchain Education Experiences| Speaker | Founder & CEO, Nodeunlock | NU Tribe | Human",
+                title:"Creator of Blockchain Education Experiences",
                 description:"Nodeunlock | Creator of Blockchain Education Experiences| Speaker | Founder & CEO, Nodeunlock | NU Tribe | Human",
                 location:"Berlin, Germany",
                 industry:"Software & IT",
@@ -155,7 +157,7 @@ goal_name.each {|name| Goal.create!(title: name)}
 #ADDING SKILLS AND GOALS TO USERS
 
 #U1
-u1.skill_list = Skill.all.sample(2).pluck(:title)
+u1.skill_list = Skill.all.sample(4).pluck(:title)
 u1.goal_list = ["Invest in Project"]
 u1.save!
 
@@ -165,12 +167,12 @@ u2.goal_list = ["Hire", "Hire freelancers"]
 u2.save!
 
 #U3
-u3.skill_list = Skill.all.sample(5).pluck(:title)
+u3.skill_list = Skill.all.sample(3).pluck(:title)
 u3.goal_list = ["Mentor others"]
 u3.save!
 
 #u4
-u4.skill_list = Skill.all.sample(2).pluck(:title)
+u4.skill_list = Skill.all.sample(5).pluck(:title)
 u4.goal_list = ["Find a mentor"]
 u4.save!
 

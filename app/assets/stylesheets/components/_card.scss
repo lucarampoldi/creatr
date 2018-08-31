@@ -166,16 +166,19 @@ padding: 10px;
 
   display: flex;
   flex-direction: column;
-  height: 70vh;
+  min-height: 70vh;
   margin: 20px;
-  border: 1px solid #C4C4C4;
+  border: 1px solid rgb(240,240,240);
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07), 0 1px 0 0 rgba(0,0,0,0.03);
+  padding: 20px;
+
 }
 
 .top-part{
 
   display: flex;
   flex-direction: column;
-  height: 30vh;
+
   justify-content: center;
   align-items: center;
 }
@@ -198,10 +201,13 @@ padding: 10px;
 
   h4.user-box-heading {
     color: #202020;
+    line-height: 1.3px;
+    margin: 30px;
   }
 
   h5.user-box-title {
     color: #202020;
+    line-height: 1.3;
   }
 }
 
@@ -213,7 +219,8 @@ padding: 10px;
   padding: 20px;
     p.goal-description-user{
     color: white;
-    font-size: 15px;
+    font-size: 17px;
+    margin-bottom: 0px;
   }
 }
 
@@ -230,6 +237,7 @@ padding: 10px;
   flex-wrap: wrap;
   background-color: white;
   padding: 5px 10px;
+  margin: 15px;
 
   span {
     color: #5AB2B7;
@@ -244,6 +252,7 @@ padding: 10px;
   flex-direction: row;
   justify-content: space-between;
   margin: 10px 90px;
+  margin-bottom: 80px;
 }
 
 .disliker{
@@ -297,5 +306,34 @@ padding: 10px;
   margin-left: 5px;
   &:focus{
     color:white;
+  }
+}
+
+
+
+
+.container-goal-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+
+.button1{
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border: 1px solid #5AB2B7;
+  border-radius: 20px;
+  font-size: 14px;
+  height: 30px;
+  margin: 5px 10px;
+  p{
+    margin-bottom: 0px;
+    color: #5AB2B7;
   }
 }

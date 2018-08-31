@@ -19,12 +19,8 @@
       <p class="goal-description-user">
         <%= user.goal_description %>
       </p>
-
-      <p class="goal-description-user">
-        <%= user.goal_list %>
-      </p>
-
   </div>
+
 
     <div class="skill-part">
       <div class="skills-user-list">
@@ -33,7 +29,19 @@
 
       </div>
     </div>
- </div>
+
+    <div class="container-goal-list">
+
+      <% user.goal_list.each do |goal| %>
+        <div class="button1">
+          <p> <%= goal %> </p>
+        </div>
+      <% end %>
+
+
+    </div>
+
+</div>
 
     <div class="match-container">
 

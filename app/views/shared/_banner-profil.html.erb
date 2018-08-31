@@ -4,35 +4,26 @@
 
   <div class="top-banner">
     <div class="user-title">
-      <h4> Product Designer</h4>
+      <h4><%= user.title %></h4>
     </div>
   </div>
-  <%= image_tag user.photo_url, class: "user-photo" %>
+  <%= image_tag user.photo_url , class: "user-photo" if user.photo_url %>
 
   <div class="bottom-banner">
 
     <div class="user-des">
-
       <h1> <%= user.description %></h1>
-
     </div>
-  </div>
 
-  <div>
-    <%= form_for(@like) do |f| %>
-      <%= f.text_field :receiver_id, value: @user.id, type: :hidden %>
-      <%= f.submit "Like" %>
-    <% end %>
 
-    |
+    <%#= Like button %>
+    <div>
+      <%= form_for(@like) do |f| %>
+        <%= f.text_field :receiver_id, value: @user.id, type: :hidden %>
+        <%= f.button "Is it your match?", class: "btn btn-primary gradient" %>
+      <% end %>
+    </div>
 
-    <%= link_to "Back", "#" %>
-
-    |
-
-    <% if @user.liked_users.exists?(current_user.id) %>
-      HE LIKES US
-    <% end %>
   </div>
 </div>
 

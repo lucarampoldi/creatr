@@ -3,7 +3,9 @@
 
   <div class="top-part">
 
-      <%= image_tag user.photo_url, class: "user-card-avatar" %>
+      <%= link_to user_path(user) do %>
+       <%= image_tag user.photo_url, class: "user-card-avatar" if user.photo_url %>
+      <% end %>
 
 
       <div class="user-box" >

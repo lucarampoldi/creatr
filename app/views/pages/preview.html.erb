@@ -1,0 +1,61 @@
+<% user = User.first %>
+<% user2 = User.last %>
+
+<div class="match-card">
+
+  <h1 class="match-card__heading">
+    It´s a creators match!
+  </h1>
+
+  <div class="match-card__users">
+     <div class="match-card__user">
+        <div class="match-card__image-wrapper" style="background-image: url(<%= user.photo.url %>)">
+        </div>
+
+        <p class="match-card__user-name">
+          <%= user.first_name %>
+          <%= user.last_name %>
+        </p>
+
+        <p class="match-card__user-title">
+          <%= user.title %>
+        </p>
+
+        <p class="match-card__goal-description">
+          <%= user.goal_description %>
+       </p>
+     </div>
+
+     <div class="match-card__user">
+        <div class="match-card__image-wrapper match-card__image-wrapper--right" style="background-image: url(<%= user.photo.url %>)">
+        </div>
+
+        <p class="match-card__user-name">
+          <%= user.first_name %>
+          <%= user.last_name %>
+        </p>
+
+        <p class="match-card__user-title">
+         <%= user.title %>
+        </p>
+
+        <p class="match-card__goal-description">
+          <%= user.goal_description %>
+        </p>
+     </div>
+  </div>
+
+  <div class="match-card__button-wrapper">
+    <%= link_to "Start creating", root_path, class: "match-card__send-button" %>
+
+    <%= link_to "Back to swiping", root_path, class: "match-card__skip-button" %>
+  </div>
+</div>
+
+
+
+
+
+
+
+

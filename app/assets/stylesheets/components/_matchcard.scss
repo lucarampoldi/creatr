@@ -1,0 +1,80 @@
+.match-card {
+  text-align:center;
+  font-size: 16px;
+}
+
+h1.match-card__heading {
+  text-align: center;
+  color: #5AB2B6;
+}
+
+.match-card__users {
+  padding: 20px;
+  display: grid;
+  grid-column-gap: 40px;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+.match-card__user {
+  text-align: right;
+
+  &:nth-child(2) {
+    text-align: left;
+  }
+}
+
+.match-card__image-wrapper {
+  background-size: cover;
+  background-position: center;
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  right: -30px;
+}
+
+.match-card__image-wrapper--right {
+  right: 30px;
+}
+
+
+.match-card__goal-description {
+
+
+}
+
+.match-card__user-name {
+
+
+}
+
+.match-card__user-title {
+
+}
+
+
+.match-card__button-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.match-card__send-button {
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: #5AB2B6;
+  color: white;
+  margin-bottom: 15px;
+  display: inline-block;
+
+}
+
+.match-card__skip-button {
+display: inline-block;
+}
+
+

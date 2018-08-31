@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_30_090509) do
+ActiveRecord::Schema.define(version: 2018_08_31_104928) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,6 +19,24 @@ ActiveRecord::Schema.define(version: 2018_08_30_090509) do
     t.string "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "likes", force: :cascade do |t|
+    t.bigint "originator_id"
+    t.bigint "receiver_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["originator_id"], name: "index_likes_on_originator_id"
+    t.index ["receiver_id"], name: "index_likes_on_receiver_id"
+  end
+
+  create_table "matches", force: :cascade do |t|
+    t.bigint "matcher_id"
+    t.bigint "matched_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["matched_id"], name: "index_matches_on_matched_id"
+    t.index ["matcher_id"], name: "index_matches_on_matcher_id"
   end
 
   create_table "skills", force: :cascade do |t|
@@ -76,4 +94,8 @@ ActiveRecord::Schema.define(version: 2018_08_30_090509) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "likes", "users", column: "originator_id"
+  add_foreign_key "likes", "users", column: "receiver_id"
+  add_foreign_key "matches", "users", column: "matched_id"
+  add_foreign_key "matches", "users", column: "matcher_id"
 end

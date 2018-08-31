@@ -2,7 +2,6 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  background-color: orange;
   height: 60vh;
   .top-banner{
     height: 50%;
@@ -47,6 +46,7 @@
     padding: 40px;
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     .user-des {

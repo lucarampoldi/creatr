@@ -86,11 +86,11 @@ u5 = User.create!(
                 linkedin_url:"https://www.linkedin.com/in/hans-henrik-christensen-719986/",
                 github_url:"https://github.com/impactpractise/",
                 dribbble_url:"https://dribbble.com/Luizzaly",
-                achievement:"At heart a doer and optimist I possess 20+ years in senior management. My network into the global innovation and entrepreneurial network includes startups, emerging technologies, co-working, venture capital and angel networks"
+                achievement:"20+ years in senior management. My network into the global innovation and entrepreneurial network includes startups, emerging technologies, co-working, venture capital and angel networks"
                 )
 
 u6 = User.create!(
-                first_name:"Elliott",
+                first_name:"Elly",
                 last_name:"Callender",
                 photo:File.open(Rails.root + "app/assets/images/u6.jpeg"),
                 email:"elliott-callender@example.com",
@@ -106,25 +106,203 @@ u6 = User.create!(
                 achievement:"We look for minds to be blown, interactions to have a deeper meaning and each person to accelerate their education and use their new found knowledge in both their business and personal lives."
                 )
 
+u7 = User.create!(
+                first_name:"Mathew",
+                last_name:"Carcker",
+                photo:File.open(Rails.root + "app/assets/images/u7.jpeg"),
+                email:"mathew-carcker@example.com",
+                password:"123456",
+                title:"Data scientist",
+                description:" Worked at KMPG for 5 years building AI tools to automate testing process",
+                location:"London, UK",
+                industry:"Software & IT",
+                goal_description:"Get mentorship in management",
+                linkedin_url:"https://www.linkedin.com/in/elliott-callender/",
+                github_url:"https://github.com/impactpractise/",
+                dribbble_url:"https://dribbble.com/Luizzaly",
+                achievement:"We look for minds to be blown, interactions to have a deeper meaning and each person to accelerate their education and use their new found knowledge in both their business and personal lives."
+                )
 
+u8 = User.create!(
+                first_name:"Jules",
+                last_name:"Tremor",
+                photo:File.open(Rails.root + "app/assets/images/u8.jpeg"),
+                email:"jules-termor@example.com",
+                password:"123456",
+                title:"Product Manager",
+                description:"Manager at Walmart, with 3 years of experience",
+                location:"Paris, France",
+                industry:"Food sector",
+                goal_description:"Obtain mentorship on how to improve management style",
+                linkedin_url:"https://www.linkedin.com/in/elliott-callender/",
+                github_url:"https://github.com/impactpractise/",
+                dribbble_url:"https://dribbble.com/Luizzaly",
+                achievement:"Cut supply-related costs by 35% in 2 months "
+                )
+u9 = User.create!(
+                first_name:"Carly",
+                last_name:"Sumeri",
+                photo:File.open(Rails.root + "app/assets/images/u9.jpeg"),
+                email:"carly-sumeri@example.com",
+                password:"123456",
+                title:"student",
+                description:"History major seeking to obtain investement for data-analysis startup. If interested, swipe right!",
+                location:"Manchester, UK",
+                industry:"Academics",
+                goal_description:"Obtain invesment for Plicing Limited, available on Chrome Store",
+                linkedin_url:"https://www.linkedin.com/in/elliott-callender/",
+                github_url:"https://github.com/impactpractise/",
+                dribbble_url:"https://dribbble.com/Luizzaly",
+                achievement:"Completed major with best grades in my year"
+                )
+
+u10 = User.create!(
+                first_name:"Matilde",
+                last_name:"Squillantez",
+                photo:File.open(Rails.root + "app/assets/images/u10.jpeg"),
+                email:"matilde-ferreri@example.com",
+                password:"123456",
+                title:" Angel Investor",
+                description:"Keen eye for detail, have made millions by spotting the correct teams and products",
+                location:"Barcelona, Spain",
+                industry:"Business and Financial Services",
+                goal_description:"Invest in or mentor exceptional projects or startups",
+                linkedin_url:"https://www.linkedin.com/in/elliott-callender/",
+                github_url:"https://github.com/impactpractise/",
+                dribbble_url:"https://dribbble.com/Luizzaly",
+                achievement:"Early investor in comapnies like Ferrero and WeChat"
+                )
+u11 = User.create!(
+                first_name:"Rodrigo",
+                last_name:"Hernandex",
+                photo:File.open(Rails.root + "app/assets/images/u11.jpeg"),
+                email:"rodrigo-hernandex@example.com",
+                password:"123456",
+                title:"Junior Developer",
+                description:"Recent coding convert, my language of choice is Javascript",
+                location:"madrid, Spain",
+                industry:"Programming and Web Development",
+                goal_description:"Get hired by dynamic startup",
+                linkedin_url:"https://www.linkedin.com/in/elliott-callender/",
+                github_url:"https://github.com/impactpractise/",
+                dribbble_url:"https://dribbble.com/Luizzaly",
+                achievement:"Created a web platform for shoes that is now host to 35,000 users"
+                )
+u12 = User.create!(
+                first_name:"Sebastien",
+                last_name:"Croyes",
+                photo:File.open(Rails.root + "app/assets/images/u12.jpeg"),
+                email:"sebastien-croyes@example.com",
+                password:"123456",
+                title:"Founder and CEO of WeWrite startup",
+                description:"Worked as a creative writer for 11 years, now using that for my business",
+                location:"Marseilles, France",
+                industry:"Creative Writing",
+                goal_description:"Hire developers for my platform",
+                linkedin_url:"https://www.linkedin.com/in/elliott-callender/",
+                github_url:"https://github.com/impactpractise/",
+                dribbble_url:"https://dribbble.com/Luizzaly",
+                achievement:"Raised over 20,000 in early investment rounds"
+                )
+u13 = User.create!(
+                first_name:"Francois",
+                last_name:"Purez",
+                photo:File.open(Rails.root + "app/assets/images/u13.jpeg"),
+                email:"francois-purez@example.com",
+                password:"123456",
+                title:"Ruby developer",
+                description:"Cofounded of Lenz startup, #education, #opportuniy #future",
+                location:"Marseilles, France",
+                industry:"Programming and Web Development",
+                goal_description:"Meet inspiring mentors or future employee",
+                linkedin_url:"https://www.linkedin.com/in/elliott-callender/",
+                github_url:"https://github.com/impactpractise/",
+                dribbble_url:"https://dribbble.com/Luizzaly",
+                achievement:"Raised over 20,000 in early investment rounds"
+                )
+
+u14 = User.create!(
+                first_name:"Jan",
+                last_name:"Schmidt",
+                photo:File.open(Rails.root + "app/assets/images/u14.jpeg"),
+                email:"jan-schmidt@example.com",
+                password:"123456",
+                title:"Engineer",
+                description:"Engineer at Volkswagen, production planning",
+                location:"Munich, Germany",
+                industry:"Automobiles and Transportion",
+                goal_description:"Meet a life mentor",
+                linkedin_url:"https://www.linkedin.com/in/elliott-callender/",
+                github_url:"https://github.com/impactpractise/",
+                dribbble_url:"https://dribbble.com/Luizzaly",
+                achievement:"One of the principal designers behind the Volkswagen Polo"
+                )
+u15 = User.create!(
+                first_name:"Francesco",
+                last_name:"Pulleri",
+                photo:File.open(Rails.root + "app/assets/images/u15.jpeg"),
+                email:"francesco-pulleri@example.com",
+                password:"123456",
+                title:"Business Professor",
+                description:"Professor at INSEAD business school",
+                location:"Fontainebleau, France",
+                industry:"Academics and Research",
+                goal_description:"Mentor ambitious individuals with technical experience",
+                linkedin_url:"https://www.linkedin.com/in/elliott-callender/",
+                github_url:"https://github.com/impactpractise/",
+                dribbble_url:"https://dribbble.com/Luizzaly",
+                achievement:"Lectured at INSEAD and Stanford"
+                )
+u16 = User.create!(
+                first_name:"Pietro",
+                last_name:"Ferrore",
+                photo:File.open(Rails.root + "app/assets/images/u16.jpeg"),
+                email:"pietro-ferrore@example.com",
+                password:"123456",
+                title:"Economics Professor",
+                description:"Teaching and reaserching Behavioural Economics at La Sapienza, Italy",
+                location:"Rome, Italy",
+                industry:"Teaching and Research",
+                goal_description:"Invest in startup operating with microcredit",
+                linkedin_url:"https://www.linkedin.com/in/elliott-callender/",
+                github_url:"https://github.com/impactpractise/",
+                dribbble_url:"https://dribbble.com/Luizzaly",
+                achievement:"Had numerous articles published in leading psychology and economics journals"
+                )
+u17 = User.create!(
+                first_name:"Luciana",
+                last_name:"Battini",
+                photo:File.open(Rails.root + "app/assets/images/u17.jpeg"),
+                email:"luciana-battini@example.com",
+                password:"123456",
+                title:"Investor",
+                description:"Work in a VC group at AFI, Italy",
+                location:"Milan, Italy",
+                industry:"Venture Capitalists",
+                goal_description:"Invest in teams of under 35s with strong background in biology or chemistry",
+                linkedin_url:"https://www.linkedin.com/in/elliott-callender/",
+                github_url:"https://github.com/impactpractise/",
+                dribbble_url:"https://dribbble.com/Luizzaly",
+                achievement:"Rose from humble origins to a position of great security"
+                )
 skill_name = [
   "Sales",
   "Artificial Intelligence",
-  "Startups",
+  "Management",
   "Blockchain",
   "Business Development",
   "Strategic Partnerships",
   "Growth Hacking",
-  "Innovation",
+  "Statistics",
   "Tech Entrepreneur",
   "Business Strategy",
-  "Networking",
-  "Hackathons",
+  "PR",
+  "Product Mangament",
   "Event management",
-  "Product Sprint",
+  "Supply chain",
   "Design Thinking",
   "Saas",
-  "Negotiation",
+  "Consulting",
   "Account Management",
   "CEO",
   "CTO",
@@ -133,7 +311,60 @@ skill_name = [
   "CHO",
   "Bitcoin",
   "Token Economy",
-  "Mentorship",
+  "Ruby",
+  "Javascript",
+  "CSS and HTML",
+  "C",
+  "Swift",
+  "Python",
+  "Computer Programming",
+  "French",
+  "English",
+  "Spanish",
+  "German",
+  "Cantonese",
+  "Business Analyst",
+  "Product Mangament",
+  "R",
+  "Languages",
+  "Teaching",
+  "Research",
+  "Leadership",
+  "Time management",
+  "Creative Writing",
+  "Adobe",
+  "Potoshop",
+  "Influencing",
+  "Social media",
+  "Photography",
+  "HR",
+  "Numerical Reasoning",
+  "Engineering",
+  "Financial services",
+  "Community Management",
+  "Legal services",
+  "Academics",
+  "Production Operations",
+  "Art",
+  "Fashion",
+  "Data analysis",
+  "Architecture",
+  "Recruitment",
+  "Accountancy",
+  "Advertising",
+  "Agriculcture",
+  "Arbitrators",
+  "Mediators",
+  "Therapy",
+  "SQL",
+  "Education",
+  "Interviewer",
+  "Health and Fitness",
+  "Psychology",
+  "Fundraising",
+  "Logistic Analyst",
+  "Military",
+  "Policing",
   "Marketing",
   "Collaboration Hacks",
   "Tools"
@@ -143,12 +374,11 @@ skill_name.each {|name| Skill.create!(title: name)}
 
 goal_name = [
   "Hire",
-  "Find a job",
+  "Get Hired",
   "Invest in Project",
-  "Meet Investor",
-  "Hire freelancer",
-  "Find a mentor",
-  "Mentor others"
+  "Get Investment",
+  "Find a Mentor",
+  "Mentor Others"
 ]
 
 goal_name.each {|name| Goal.create!(title: name)}
@@ -157,23 +387,23 @@ goal_name.each {|name| Goal.create!(title: name)}
 #ADDING SKILLS AND GOALS TO USERS
 
 #U1
-u1.skill_list = Skill.all.sample(4).pluck(:title)
+u1.skill_list = Skill.all.sample(5).pluck(:title)
 u1.goal_list = ["Invest in Project"]
 u1.save!
 
 #U2
-u2.skill_list = Skill.all.sample(4).pluck(:title)
-u2.goal_list = ["Hire", "Hire freelancers"]
+u2.skill_list = Skill.all.sample(6).pluck(:title)
+u2.goal_list = ["Hire"]
 u2.save!
 
 #U3
-u3.skill_list = Skill.all.sample(3).pluck(:title)
-u3.goal_list = ["Mentor others"]
+u3.skill_list = Skill.all.sample(6).pluck(:title)
+u3.goal_list = ["Mentor Others"]
 u3.save!
 
 #u4
 u4.skill_list = Skill.all.sample(5).pluck(:title)
-u4.goal_list = ["Find a mentor"]
+u4.goal_list = ["Find a Mentor"]
 u4.save!
 
 #u5
@@ -182,6 +412,61 @@ u5.goal_list = ["Hire"]
 u5.save!
 
 #u6
-u6.skill_list = Skill.all.sample(4).pluck(:title)
-u6.goal_list = ["Find a job", "Meet an investor"]
+u6.skill_list = Skill.all.sample(5).pluck(:title)
+u6.goal_list = ["Get Hired", "Find a Mentor"]
 u6.save!
+
+#u7
+u7.skill_list = Skill.all.sample(6).pluck(:title)
+u7.goal_list = ["Find a Mentor"]
+u7.save!
+
+#u8
+u8.skill_list = Skill.all.sample(6).pluck(:title)
+u8.goal_list = ["Find a Mentor"]
+u8.save!
+
+#u9
+u9.skill_list = Skill.all.sample(5).pluck(:title)
+u9.goal_list = ["Get Investment"]
+u9.save!
+
+#u10
+u10.skill_list = Skill.all.sample(6).pluck(:title)
+u10.goal_list = ["Invest in Project", "Mentor Others"]
+u10.save!
+
+#u11
+u11.skill_list = Skill.all.sample(6).pluck(:title)
+u11.goal_list = ["Get hired"]
+u11.save!
+
+#u12
+u12.skill_list = Skill.all.sample(5).pluck(:title)
+u12.goal_list = ["Hire"]
+u12.save!
+
+#u13
+u13.skill_list = Skill.all.sample(6).pluck(:title)
+u13.goal_list = ["Hire, Find a Mentor"]
+u13.save!
+
+#u14
+u14.skill_list = Skill.all.sample(6).pluck(:title)
+u14.goal_list = ["Find a Mentor"]
+u14.save!
+
+#u15
+u15.skill_list = Skill.all.sample(6).pluck(:title)
+u15.goal_list = ["Mentor Others, Hire"]
+u15.save!
+
+#u16
+u16.skill_list = Skill.all.sample(6).pluck(:title)
+u16.goal_list = ["Invest"]
+u16.save!
+
+#u17
+u17.skill_list = Skill.all.sample(6).pluck(:title)
+u17.goal_list = ["Invest"]
+u17.save!

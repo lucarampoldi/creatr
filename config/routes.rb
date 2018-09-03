@@ -27,9 +27,13 @@ Rails.application.routes.draw do
 
   resources :matches, only: [:show] do
     resources :chatrooms, only: [:create] do
-      resources :messages, only: [:create]
     end
   end
 
-  resources :chatrooms, only: [:show]
+  resources :chatrooms, only: [:show] do
+   resources :messages, only: [:create]
+  end
+
+  mount ActionCable.server => '/cable'
+
 end

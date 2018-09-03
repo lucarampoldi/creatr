@@ -14,11 +14,9 @@ u1 = User.create!(
                 description:"Serial entrepreneur, software engineer and investor.",
                 location:"Berlin, Germany",
                 industry:"Software & IT",
-                goal_description: "Invest in the health sector",
                 linkedin_url:"https://www.linkedin.com/in/thomasbachem/",
                 github_url:"https://github.com/impactpractise/",
-                dribbble_url:"https://dribbble.com/Luizzaly",
-                achievement:"Found and sold several Startups. CEO and Cancellor of a coding, design and entrepreneurial school, Code.berlin"
+                dribbble_url:"https://dribbble.com/Luizzaly"
                 )
 
 u2 = User.create!(
@@ -31,11 +29,9 @@ u2 = User.create!(
                 description:"I tell Stories with Statistics & Data | IITK | AIR 1 in DU | Certified by Microsoft, Google, Oxford | Proud Indian",
                 location:"Kolkata, West Bengal, Indien",
                 industry:"Software & IT",
-                goal_description: "Hire developers in Ruby and JS",
                 linkedin_url:"https://www.linkedin.com/in/souravstat/",
                 github_url:"Github- github.com/souravstat",
-                dribbble_url:"https://dribbble.com/Luizzaly",
-                achievement:"Check: https://docs.google.com/spreadsheets/d/1EcpoaKNf4O-AE9jVgg9bqN76vAQ7biSbYuMaS_nFGlY/edit#gid=0"
+                dribbble_url:"https://dribbble.com/Luizzaly"
                 )
 
 u3 = User.create!(
@@ -48,11 +44,9 @@ u3 = User.create!(
                 description:"Hi, My name is Mohamed Ibrahim and I'm a 3rd year software engineering student at the University of Ontario Institute of Technology. If you have any questions feel free to reach me at mohamed.ibrahim1@uoit.net",
                 location:"Toronto, Canada",
                 industry:"Software & IT",
-                goal_description: "Mentors students with entrepreneurial ambitions",
                 linkedin_url:"https://www.linkedin.com/in/mohamed-ibrahim42/",
                 github_url:"https://github.com/",
-                dribbble_url:"https://dribbble.com/Luizzaly",
-                achievement:"Found and sold several Startups. CEO and Cancellor of a coding, design and entrepreneurial school, Code.berlin"
+                dribbble_url:"https://dribbble.com/Luizzaly"
                 )
 
 u4 = User.create!(
@@ -65,11 +59,9 @@ u4 = User.create!(
                 description:"Devious thinker whose application of common sense is often mistaken for genius. If I have a talent, its helping smart and amazing people, be even more smart and amazing. #AllWeDoIsWin",
                 location:"Washington D.C.",
                 industry:"Human Recources, Finance",
-                goal_description:"Find a mentor to grow my busines",
                 linkedin_url:"https://www.linkedin.com/in/samson-williams-axesandeggs/",
                 github_url:"https://github.com/impactpractise/",
-                dribbble_url:"https://dribbble.com/Luizzaly",
-                achievement:"A expert to connect with and consider for anything related to Finance, FinTech, Equity Crowdfunding, Blockchains and Crypto Currency"
+                dribbble_url:"https://dribbble.com/Luizzaly"
                 )
 
 u5 = User.create!(
@@ -82,11 +74,9 @@ u5 = User.create!(
                 description:"I create mind-blowing educational experiences around decentralised technology and blockchain and have an endless amount of curiosity for other human beings.",
                 location:"United Arabic Emirates",
                 industry:"Blockchain, Decentral Economy",
-                goal_description:"Hire professionals with a statistics background",
                 linkedin_url:"https://www.linkedin.com/in/hans-henrik-christensen-719986/",
                 github_url:"https://github.com/impactpractise/",
-                dribbble_url:"https://dribbble.com/Luizzaly",
-                achievement:"20+ years in senior management. My network into the global innovation and entrepreneurial network includes startups, emerging technologies, co-working, venture capital and angel networks"
+                dribbble_url:"https://dribbble.com/Luizzaly"
                 )
 
 u6 = User.create!(
@@ -99,11 +89,9 @@ u6 = User.create!(
                 description:"Nodeunlock | Creator of Blockchain Education Experiences| Speaker | Founder & CEO, Nodeunlock | NU Tribe | Human",
                 location:"Berlin, Germany",
                 industry:"Software & IT",
-                goal_description:"Get employed or get advice related to employment",
                 linkedin_url:"https://www.linkedin.com/in/elliott-callender/",
                 github_url:"https://github.com/impactpractise/",
-                dribbble_url:"https://dribbble.com/Luizzaly",
-                achievement:"We look for minds to be blown, interactions to have a deeper meaning and each person to accelerate their education and use their new found knowledge in both their business and personal lives."
+                dribbble_url:"https://dribbble.com/Luizzaly"
                 )
 
 u7 = User.create!(
@@ -116,11 +104,9 @@ u7 = User.create!(
                 description:" Worked at KMPG for 5 years building AI tools to automate testing process",
                 location:"London, UK",
                 industry:"Software & IT",
-                goal_description:"Get mentorship in management",
                 linkedin_url:"https://www.linkedin.com/in/elliott-callender/",
                 github_url:"https://github.com/impactpractise/",
-                dribbble_url:"https://dribbble.com/Luizzaly",
-                achievement:"We look for minds to be blown, interactions to have a deeper meaning and each person to accelerate their education and use their new found knowledge in both their business and personal lives."
+                dribbble_url:"https://dribbble.com/Luizzaly"
                 )
 
 u8 = User.create!(
@@ -133,11 +119,9 @@ u8 = User.create!(
                 description:"Manager at Walmart, with 3 years of experience",
                 location:"Paris, France",
                 industry:"Food sector",
-                goal_description:"Obtain mentorship on how to improve management style",
                 linkedin_url:"https://www.linkedin.com/in/elliott-callender/",
                 github_url:"https://github.com/impactpractise/",
-                dribbble_url:"https://dribbble.com/Luizzaly",
-                achievement:"Cut supply-related costs by 35% in 2 months "
+                dribbble_url:"https://dribbble.com/Luizzaly"
                 )
 u9 = User.create!(
                 first_name:"Carly",
@@ -149,11 +133,9 @@ u9 = User.create!(
                 description:"History major seeking to obtain investement for data-analysis startup. If interested, swipe right!",
                 location:"Manchester, UK",
                 industry:"Academics",
-                goal_description:"Obtain invesment for Plicing Limited, available on Chrome Store",
                 linkedin_url:"https://www.linkedin.com/in/elliott-callender/",
                 github_url:"https://github.com/impactpractise/",
-                dribbble_url:"https://dribbble.com/Luizzaly",
-                achievement:"Completed major with best grades in my year"
+                dribbble_url:"https://dribbble.com/Luizzaly"
                 )
 
 u10 = User.create!(
@@ -166,11 +148,9 @@ u10 = User.create!(
                 description:"Keen eye for detail, have made millions by spotting the correct teams and products",
                 location:"Barcelona, Spain",
                 industry:"Business and Financial Services",
-                goal_description:"Invest in or mentor exceptional projects or startups",
                 linkedin_url:"https://www.linkedin.com/in/elliott-callender/",
                 github_url:"https://github.com/impactpractise/",
-                dribbble_url:"https://dribbble.com/Luizzaly",
-                achievement:"Early investor in comapnies like Ferrero and WeChat"
+                dribbble_url:"https://dribbble.com/Luizzaly"
                 )
 u11 = User.create!(
                 first_name:"Rodrigo",
@@ -182,11 +162,9 @@ u11 = User.create!(
                 description:"Recent coding convert, my language of choice is Javascript",
                 location:"madrid, Spain",
                 industry:"Programming and Web Development",
-                goal_description:"Get hired by dynamic startup",
                 linkedin_url:"https://www.linkedin.com/in/elliott-callender/",
                 github_url:"https://github.com/impactpractise/",
-                dribbble_url:"https://dribbble.com/Luizzaly",
-                achievement:"Created a web platform for shoes that is now host to 35,000 users"
+                dribbble_url:"https://dribbble.com/Luizzaly"
                 )
 u12 = User.create!(
                 first_name:"Sebastien",
@@ -198,11 +176,9 @@ u12 = User.create!(
                 description:"Worked as a creative writer for 11 years, now using that for my business",
                 location:"Marseilles, France",
                 industry:"Creative Writing",
-                goal_description:"Hire developers for my platform",
                 linkedin_url:"https://www.linkedin.com/in/elliott-callender/",
                 github_url:"https://github.com/impactpractise/",
-                dribbble_url:"https://dribbble.com/Luizzaly",
-                achievement:"Raised over 20,000 in early investment rounds"
+                dribbble_url:"https://dribbble.com/Luizzaly"
                 )
 u13 = User.create!(
                 first_name:"Francois",
@@ -214,11 +190,9 @@ u13 = User.create!(
                 description:"Cofounded of Lenz startup, #education, #opportuniy #future",
                 location:"Marseilles, France",
                 industry:"Programming and Web Development",
-                goal_description:"Meet inspiring mentors or future employee",
                 linkedin_url:"https://www.linkedin.com/in/elliott-callender/",
                 github_url:"https://github.com/impactpractise/",
-                dribbble_url:"https://dribbble.com/Luizzaly",
-                achievement:"Raised over 20,000 in early investment rounds"
+                dribbble_url:"https://dribbble.com/Luizzaly"
                 )
 
 u14 = User.create!(
@@ -231,11 +205,9 @@ u14 = User.create!(
                 description:"Engineer at Volkswagen, production planning",
                 location:"Munich, Germany",
                 industry:"Automobiles and Transportion",
-                goal_description:"Meet a life mentor",
                 linkedin_url:"https://www.linkedin.com/in/elliott-callender/",
                 github_url:"https://github.com/impactpractise/",
-                dribbble_url:"https://dribbble.com/Luizzaly",
-                achievement:"One of the principal designers behind the Volkswagen Polo"
+                dribbble_url:"https://dribbble.com/Luizzaly"
                 )
 u15 = User.create!(
                 first_name:"Francesco",
@@ -247,11 +219,10 @@ u15 = User.create!(
                 description:"Professor at INSEAD business school",
                 location:"Fontainebleau, France",
                 industry:"Academics and Research",
-                goal_description:"Mentor ambitious individuals with technical experience",
                 linkedin_url:"https://www.linkedin.com/in/elliott-callender/",
                 github_url:"https://github.com/impactpractise/",
-                dribbble_url:"https://dribbble.com/Luizzaly",
-                achievement:"Lectured at INSEAD and Stanford"
+                dribbble_url:"https://dribbble.com/Luizzaly"
+
                 )
 u16 = User.create!(
                 first_name:"Pietro",
@@ -263,11 +234,9 @@ u16 = User.create!(
                 description:"Teaching and reaserching Behavioural Economics at La Sapienza, Italy",
                 location:"Rome, Italy",
                 industry:"Teaching and Research",
-                goal_description:"Invest in startup operating with microcredit",
                 linkedin_url:"https://www.linkedin.com/in/elliott-callender/",
                 github_url:"https://github.com/impactpractise/",
-                dribbble_url:"https://dribbble.com/Luizzaly",
-                achievement:"Had numerous articles published in leading psychology and economics journals"
+                dribbble_url:"https://dribbble.com/Luizzaly"
                 )
 u17 = User.create!(
                 first_name:"Luciana",
@@ -279,11 +248,9 @@ u17 = User.create!(
                 description:"Work in a VC group at AFI, Italy",
                 location:"Milan, Italy",
                 industry:"Venture Capitalists",
-                goal_description:"Invest in teams of under 35s with strong background in biology or chemistry",
                 linkedin_url:"https://www.linkedin.com/in/elliott-callender/",
                 github_url:"https://github.com/impactpractise/",
-                dribbble_url:"https://dribbble.com/Luizzaly",
-                achievement:"Rose from humble origins to a position of great security"
+                dribbble_url:"https://dribbble.com/Luizzaly"
                 )
 skill_name = [
   "Sales",

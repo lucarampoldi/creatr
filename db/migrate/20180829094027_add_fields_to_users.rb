@@ -10,6 +10,5 @@ class AddFieldsToUsers < ActiveRecord::Migration[5.2]
     add_column :users, :linkedin_url, :string
     add_column :users, :github_url, :string
     add_column :users, :dribbble_url, :string
-    add_column :users, :achievement, :text
   end
 end

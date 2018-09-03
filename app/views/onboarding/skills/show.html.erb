@@ -21,6 +21,35 @@
                       }
                     }
         %>
+          <p class="onboarding-description no-padding">
+            Add links to your profile :D
+          </p>
+
+         <%= f.input :github_url,
+                      as: :text,
+                      label: "Github Url",
+                      input_html: {
+                        value: f.object.github_url,
+                        placeholder: "Optional",
+                    }
+        %>
+         <%= f.input :dribbble_url,
+                      as: :text,
+                      label: "Dribbble Url",
+                      input_html: {
+                        value: f.object.dribbble_url,
+                        placeholder: "Optional",
+                    }
+        %>
+        <%= f.input :linkedin_url,
+                      as: :text,
+                      label: "Linkedin Url",
+                      input_html: {
+                        value: f.object.linkedin_url,
+                        placeholder: "Optional",
+                    }
+        %>
+
         <%= f.submit "Proceed to goals", class: "btn btn-primary btn-block gradient" %>
       <% end %>
       <%= link_to "back to bio", onboarding_bios_path, class: "onboarding-link" %>

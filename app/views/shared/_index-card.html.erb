@@ -13,22 +13,26 @@
 
       <div class="user-index-box">
 
-        <i class="fas fa-warehouse fa-size"></i>
-        <div class="user-size"> <%= user.industry %></div>
+        <div class="user-row">
+          <i class="fas fa-warehouse fa-size"></i>
+          <div class="user-size"> <%= user.industry %></div>
+        </div>
+
+         <div class="user-row">
+          <i class="fas fa-puzzle-piece fa-size"></i>
+          <div class="user-size"><%= user.title %></div>
+        </div>
+
+
+
+         <div class="user-row">
+          <i class="fas fa-map-marker-alt fa-size"></i>
+
+          <div class="user-size"><%= user.location %></div>
+        </div>
       </div>
-
-        <i class="fas fa-puzzle-piece fa-size"></i>
-        <div class="user-size"><%= user.title %></div>
-      </div>
-
-
-      <div class="user-index-box">
-
-        <i class="fas fa-map-marker-alt fa-size"></i>
-        <div class="user-size"><%= user.location %></div>
-      </div>
-
     </div>
+
 
 
 
@@ -62,6 +66,8 @@
 
 </div>
 
+</div>
+
     <div class="match-container">
 
       <%= link_to "#", class: "disliker" do  %>
@@ -74,7 +80,7 @@
 
     </div>
 
-
+   </div>
 
 
 

@@ -9,10 +9,7 @@
 
 
     <div class="user-index-info">
-
-
       <div class="user-index-box">
-
         <div class="user-row">
           <i class="fas fa-warehouse fa-size"></i>
           <div class="user-size"> <%= user.industry %></div>
@@ -23,12 +20,9 @@
           <div class="user-size"><%= user.title %></div>
         </div>
 
-
-
-         <div class="user-row">
+        <div class="user-row">
           <i class="fas fa-map-marker-alt fa-size"></i>
-
-          <div class="user-size"><%= user.location %></div>
+         <div class="user-size"><%= user.location %></div>
         </div>
       </div>
     </div>
@@ -41,13 +35,11 @@
     </div>
 
     <div class="user-index-bio-box">
+      <div class="user-index-bio">
+        <%= user.description %>
+      </div>
 
-
-        <div class="user-index-bio">
-          <%= user.description %>
-        </div>
-
-    </div>
+</div>
 
 
 
@@ -60,13 +52,11 @@
           <p> <%= goal %> </p>
         </div>
       <% end %>
-
-
     </div>
 
 </div>
 
-</div>
+
 
     <div class="match-container">
 
@@ -80,7 +70,7 @@
 
     </div>
 
-   </div>
+
 
 
 

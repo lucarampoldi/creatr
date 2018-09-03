@@ -14,8 +14,6 @@ class PhotoUploader < CarrierWave::Uploader::Base
       width: 150, height: 150, crop: :thumb, gravity: :face
   end
 
-  def default_url
-    "https://images.unsplash.com/photo-1525728992788-e70a3a20f2b2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cb08e30cfa6dbe3348e457e9485b6aff&auto=format&fit=crop&w=668&q=80"
-  end
+
 
 end

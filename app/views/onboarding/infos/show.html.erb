@@ -22,16 +22,22 @@
                         placeholder: "Musk",
                       }
           %>
-          <%= f.input :title,
+          <%= f.input :role,
                       input_html: {
-                        value: f.object.last_name,
+                        value: f.object.title,
                         placeholder: "Entrepreneur",
+                      }
+          %>
+          <%= f.input :industry,
+                      input_html: {
+                        value: f.object.industry,
+                        placeholder: "Automobiles and Space",
                       }
           %>
           <%= f.input :location,
                       input_html: {
                         value: f.object.location,
-                        placeholder: "Mars",
+                        placeholder: "Mars, Colony Street, 1",
                       }
           %>
 

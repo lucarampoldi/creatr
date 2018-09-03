@@ -5,10 +5,9 @@ class Onboarding::SkillsController < ApplicationController
 
   def update
     @user = User.find(params[:user_id])
-    @user.skill_list.add(params[:user], parse: true)
+    @user.skill_list.add(params[:user][:skill_list], parse: true)
     @user.update(user_params)
 
-    @user.save!
 
     redirect_to onboarding_goals_path
   end
@@ -16,7 +15,9 @@ class Onboarding::SkillsController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:linkedin_url, :github_url, :dribbble_url)
+    params.require(:user).permit(
+      :linkedin_url, :github_url, :dribbble_url
+    )
   end
 
 end

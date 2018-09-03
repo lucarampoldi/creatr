@@ -13,6 +13,6 @@ class Onboarding::BiosController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:description, :achievement)
+    params.require(:user).permit(:description)
   end
 end

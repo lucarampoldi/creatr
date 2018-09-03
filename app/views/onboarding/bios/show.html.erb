@@ -18,13 +18,6 @@
                         placeholder: "What's your story?",
                       }
           %>
-          <%= f.input :achievement,
-                      as: :text,
-                      input_html: {
-                        value: f.object.achievement,
-                        placeholder: "Your proudest moment?",
-                      }
-          %>
           <%= f.submit "Proceed to skills", class: "btn btn-primary btn-block gradient" %>
       <% end %>
       <%= link_to "back to avatar", onboarding_avatars_path, class: "onboarding-link" %>

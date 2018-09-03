@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
+
   devise_for :users, controllers: { registrations: "registrations" }
   root to: 'pages#home'
 
   resources :users, only: [:show, :index, :update]
-
   resources :likes, only: :create
 
-  resources :matches, only: :show
+  get "pages/preview-match", to: "pages#preview", as: "preview"
 
   namespace :onboarding do
     get "skills", to: "skills#show"
@@ -24,4 +24,12 @@ Rails.application.routes.draw do
     get "avatars", to:"avatars#show"
     patch "avatars/:user_id", to: "avatars#update", as: "avatar"
   end
+
+  resources :matches, only: [:show] do
+    resources :chatrooms, only: [:create] do
+      resources :messages, only: [:create]
+    end
+  end
+
+  resources :chatrooms, only: [:show]
 end

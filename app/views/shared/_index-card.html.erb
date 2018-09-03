@@ -1,16 +1,12 @@
-<div class="user-card-container">
-
-
-      <%= link_to user_path(user) do %>
-        <div class="user-banner", style="background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('<%= user.photo&.url %>');">
-            <h1 class="user-banner-title"><%= user.first_name %></h1>
-        </div>
-      <% end %>
-
+<div class="user-card-index">
+  <div class="user-card-container">
+    <%= link_to user_path(user) do %>
+      <div class="user-banner" style="background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('<%= user.photo&.url %>');">
+          <h1 class="user-banner-title"><%= user.first_name %></h1>
+      </div>
+    <% end %>
 
     <div class="user-index-info">
-
-
       <div class="user-index-box">
 
         <div class="user-row">
@@ -23,61 +19,40 @@
           <div class="user-size"><%= user.title %></div>
         </div>
 
-
-
          <div class="user-row">
           <i class="fas fa-map-marker-alt fa-size"></i>
-
           <div class="user-size"><%= user.location %></div>
         </div>
       </div>
     </div>
-
-
-
 
     <div class="talk-to-user-about">
       Talk to <%= user.first_name %> about
     </div>
 
     <div class="user-index-bio-box">
-
-
-        <div class="user-index-bio">
-          <%= user.description %>
-        </div>
-
+      <div class="user-index-bio">
+        <%= user.description %>
+      </div>
     </div>
 
-
-
-
-
     <div class="container-goal-list">
-
       <% user.goal_list.each do |goal| %>
         <div class="button1">
           <p> <%= goal %> </p>
         </div>
       <% end %>
-
-
     </div>
+  </div>
+
+  <div class="match-container">
+    <%= link_to "#", class: "disliker" do  %>
+      <i class="fas fa-times fa-2x" style= ></i>
+    <% end %>
+
+    <button class="liker">
+      <i class="fas fa-check fa-2x" ></i>
+    </button>
+  </div>
 
 </div>
-
-</div>
-
-    <div class="match-container">
-
-      <%= link_to "#", class: "disliker" do  %>
-        <i class="fas fa-times fa-2x" style= ></i>
-      <% end %>
-
-      <button class="liker">
-        <i class="fas fa-check fa-2x" ></i>
-      </button>
-
-    </div>
-
-   </div>

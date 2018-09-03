@@ -17,5 +17,5 @@ end
 
 private
 def user_params
-  params.require(:user).permit(:goal_list, :goal_description)
+  params.require(:user).permit(:goal_list)
 end

@@ -1,36 +1,56 @@
 <div class="user-card-container">
 
 
-  <div class="top-part">
-
       <%= link_to user_path(user) do %>
-       <%= image_tag user.photo_url, class: "user-card-avatar" if user.photo_url %>
+        <div class="user-banner", style="background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('<%= user.photo&.url %>');">
+            <h1 class="user-banner-title"><%= user.first_name %></h1>
+        </div>
       <% end %>
 
 
-      <div class="user-box" >
-        <h4 class="user-box-heading">
-        <%= user.first_name %> </h4>
-       <h5 class="user-box-title"> <%= user.title %> </h5>
+    <div class="user-index-info">
 
+
+      <div class="user-index-box">
+
+        <i class="fas fa-warehouse fa-size"></i>
+        <div class="user-size"> <%= user.industry %></div>
       </div>
-  </div>
-
-  <div class="bottom-part">
-
-      <p class="goal-description-user">
-        <%= user.goal_description %>
-      </p>
-  </div>
 
 
-    <div class="skill-part">
-      <div class="skills-user-list">
+      <div class="user-index-box">
 
-        <span> <%= user.skill_list %> </span>
-
+        <i class="fas fa-puzzle-piece fa-size"></i>
+        <div class="user-size"><%= user.title %></div>
       </div>
+
+
+      <div class="user-index-box">
+
+        <i class="fas fa-map-marker-alt fa-size"></i>
+        <div class="user-size"><%= user.location %></div>
+      </div>
+
     </div>
+
+
+
+    <div class="talk-to-user-about">
+      Talk to <%= user.first_name %> about
+    </div>
+
+    <div class="user-index-bio-box">
+
+
+        <div class="user-index-bio">
+          <%= user.description %>
+        </div>
+
+    </div>
+
+
+
+
 
     <div class="container-goal-list">
 

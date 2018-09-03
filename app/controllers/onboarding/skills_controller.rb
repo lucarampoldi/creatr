@@ -7,7 +7,7 @@ class Onboarding::SkillsController < ApplicationController
     @user = User.find(params[:user_id])
     @user.skill_list.add(params[:user], parse: true)
     @user.update(user_params)
-    raise
+
     @user.save!
 
     redirect_to onboarding_goals_path

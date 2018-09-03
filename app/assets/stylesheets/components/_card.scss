@@ -210,8 +210,15 @@ padding: 10px;
 
 .user-index-box{
 display: flex;
-flex-direction: row;
+flex-direction: column;
 padding: 0px 0px 4px 0px;
+}
+
+
+.user-row{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3px;
 }
 
 .fa-size{
@@ -229,7 +236,7 @@ margin: 0px 5px 0 5px;
 
 .talk-to-user-about{
   text-align: center;
-  margin: 30px 20px 18px 20px;
+  margin: 20px 20px 18px 20px;
   color: #6A6A6A;
 }
 
@@ -333,7 +340,7 @@ margin: 0px 5px 0 5px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: -8px;
+  margin-top: -17px;
   margin-left: 0px;
   margin-right: 0px;
   overflow: hidden;

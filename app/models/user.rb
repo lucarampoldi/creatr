@@ -12,6 +12,8 @@ class User < ApplicationRecord
   has_many :liked_users, through: :given_likes, source: :receiver
   has_many :liked_by_users, through: :received_likes, source: :originator
 
+  has_many :messages, dependent: :destroy
+
   def matches
     Match.where("matcher_id = :id OR matched_id = :id", id: self.id)
   end

@@ -10,10 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_31_104928) do
+ActiveRecord::Schema.define(version: 2018_09_03_144327) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "chatrooms", force: :cascade do |t|
+    t.bigint "matcher_id"
+    t.bigint "matched_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["matched_id"], name: "index_chatrooms_on_matched_id"
+    t.index ["matcher_id"], name: "index_chatrooms_on_matcher_id"
+  end
 
   create_table "goals", force: :cascade do |t|
     t.string "title"
@@ -37,6 +46,16 @@ ActiveRecord::Schema.define(version: 2018_08_31_104928) do
     t.datetime "updated_at", null: false
     t.index ["matched_id"], name: "index_matches_on_matched_id"
     t.index ["matcher_id"], name: "index_matches_on_matcher_id"
+  end
+
+  create_table "messages", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "chatroom_id"
+    t.bigint "user_id"
+    t.text "content"
+    t.index ["chatroom_id"], name: "index_messages_on_chatroom_id"
+    t.index ["user_id"], name: "index_messages_on_user_id"
   end
 
   create_table "skills", force: :cascade do |t|
@@ -94,6 +113,8 @@ ActiveRecord::Schema.define(version: 2018_08_31_104928) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "chatrooms", "users", column: "matched_id"
+  add_foreign_key "chatrooms", "users", column: "matcher_id"
   add_foreign_key "likes", "users", column: "originator_id"
   add_foreign_key "likes", "users", column: "receiver_id"
   add_foreign_key "matches", "users", column: "matched_id"

@@ -1,12 +1,18 @@
 <div class="skills-container">
   <div class="skills">
-    <h4> Skills</h4>
+     Skills
   </div>
   <div class="skill-list">
     <% user.skill_list.each do |skill| %>
-      <span>#<%= skill %></span>
+      <div class="skill-button">
+         <div class="btn-text-skill"> <%= skill %> </div>
+      </div>
     <% end %>
   </div>
 </div>
 
-<hr>
+
+
+
+
+

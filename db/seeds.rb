@@ -26,7 +26,7 @@ u2 = User.create!(
                 email:"souravnandi@example.com",
                 password:"123456",
                 title:"Data scientist",
-                description:"I tell Stories with Statistics & Data | IITK | AIR 1 in DU | Certified by Microsoft, Google, Oxford | Proud Indian",
+                description:"I tell Stories with Statistics & Data. I am certified by Microsoft, Google, Oxford",
                 location:"Kolkata, West Bengal, Indien",
                 industry:"Software & IT",
                 linkedin_url:"https://www.linkedin.com/in/souravstat/",
@@ -112,7 +112,7 @@ u7 = User.create!(
 u8 = User.create!(
                 first_name:"Jules",
                 last_name:"Tremor",
-                photo:File.open(Rails.root + "app/assets/images/u8.jpeg"),
+                photo:File.open(Rails.root + "app/assets/images/u8.jpg"),
                 email:"jules-termor@example.com",
                 password:"123456",
                 title:"Product Manager",

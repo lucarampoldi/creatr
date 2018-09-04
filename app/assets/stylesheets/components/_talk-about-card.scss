@@ -1,0 +1,43 @@
+.about-profil{
+  text-align: center;
+  margin: 30px 20px 18px 20px;
+  color: #6A6A6A;
+}
+
+
+
+.user-profil-bio{
+  position: relative;
+  text-align: left;
+  color: #6A6A6A;
+  font-size: 15px;
+  margin: 0px 20px 30px 20px;
+  line-height: 1.4;
+  padding: 28px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-weight: 300;
+
+
+  &:before {
+    content: '"';
+    display: block;
+    position: absolute;
+    top: -8px;
+    left: 12px;
+    height: 10px;
+    color: #53D5C7;
+    font-size: 28px;
+  }
+
+    &:after {
+      content: '"';
+      top: 4px;
+      position: relative;
+      display: inline-block;
+      line-height: 0px;
+      color: #53D5C7;
+      font-size: 28px;
+  }
+}
+

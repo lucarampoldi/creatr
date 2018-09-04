@@ -2,33 +2,33 @@
 <!-- profil banner with user photo(user.photo_url) and short bio (@user.description) -->
 <div class="profil_container">
 
-  <div class="top-banner">
-    <div class="user-title">
-      <h4><%= user.title %></h4>
-    </div>
-  </div>
-  <%= image_tag user.photo_url , class: "user-photo" if user.photo_url %>
 
-  <div class="bottom-banner">
-
-    <div class="user-des">
-      <h1> <%= user.description %></h1>
+    <div class="user-banner-profil", style="background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('<%= user.photo&.url %>');">
+            <h1 class="user-banner-title-profil"><%= user.first_name %></h1>
     </div>
 
+ <div class="user-profil-info">
+    <div class="user-profil-box">
+      <div class="user-row-profil">
+        <i class="fas fa-warehouse fa-size-profil"></i>
+        <div class="user-size-profil"><%= user.industry %></div>
+      </div>
 
-    <%#= Like button %>
-    <div>
-      <%= form_for(@like) do |f| %>
-        <%= f.text_field :receiver_id, value: @user.id, type: :hidden %>
-        <%= f.button "Is it your match?", class: "btn btn-primary gradient" %>
-      <% end %>
+      <div class="user-row-profil">
+        <i class="fas fa-puzzle-piece fa-size-profil"></i>
+        <div class="user-size-profil"><%= user.title %></div>
+      </div>
+
+      <div class="user-row-profil">
+        <i class="fas fa-map-marker-alt fa-size-profil"></i>
+        <div class="user-size-profil"><%= user.location %></div>
+        </div>
+      </div>
     </div>
-
-  </div>
 </div>
 
 
-<hr>
+
 
 
 

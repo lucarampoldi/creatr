@@ -16,17 +16,25 @@
 
 
 //index-card
+.user-card-index{
+  background-color: whitesmoke;
+}
 
 .user-card-container{
   display: flex;
   flex-direction: column;
-  min-height: 70vh;
-  border: 1px solid rgb(240,240,240);
-  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07), 0 1px 0 0 rgba(0,0,0,0.03);
+  min-height: 64vh;
+  border: 1px solid #f0f0f0;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.07), 0 1px 0 0 rgba(0, 0, 0, 0.03);
   border-radius: 10px;
-  width: 80%;
+  width: 90%;
   margin: 0px auto;
   margin-bottom: 25px;
+}
+
+.index__card_content_wrap{
+  background-color: white;
+  padding: 20px;
 
 }
 
@@ -51,8 +59,9 @@
   background-size: cover;
 
   .user-banner-title {
-    color: #404040 ;
-    font-size: 20px;
+    color: white ;
+    font-size: 22px;
+    font-weight: 500;
     margin: 10px 0px 4px 15px;
     flex: 50%;
 
@@ -62,7 +71,6 @@
 .user-index-info{
   display: flex;
   flex-direction: column;
-  margin: 13px 0px 0px 15px;
 }
 
 .user-index-box{
@@ -79,31 +87,35 @@ padding: 0px 0px 4px 0px;
 }
 
 .fa-size{
-font-size: 13px;
+font-size: 14px;
 color: #6A6A6A;
 margin: 0px 5px 0 5px;
 
 
 }
 .user-size{
-  font-size: 13px;
+  font-size: 14px;
   font-weight: lighter;
   color: #989898;
 }
 
 .talk-to-user-about{
   text-align: center;
+  font-size: 19px;
+  font-weight: 300px;
   margin: 20px 20px 18px 20px;
   color: #6A6A6A;
 }
 
-
+.user-index-bio-box{
+  padding: 14px;
+}
 
 .user-index-bio{
   position: relative;
   text-align: left;
   color: #6A6A6A;
-  font-size: 15px;
+  font-size: 16px;
   margin: 0px 20px 20px 20px;
   line-height: 1.4;
   padding: 10px;
@@ -186,30 +198,28 @@ margin: 0px 5px 0 5px;
 }
 
 .match-container{
-
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin-top: -17px;
+  justify-content: center;
+  margin-top: -22px;
   margin-left: 0px;
   margin-right: 0px;
   overflow: hidden;
-  margin-bottom: 80px;
+  bottom: 20px;
   position: relative;
-  padding: 0px 118px;
-  padding-bottom: 29px;
+  padding-bottom: 33px;
+
 
   &:after{
     position: absolute;
-    width: 100%;
-    padding-top: 100%;
-    background-image: linear-gradient(to bottom, rgba(107,255,245,1) 0%, rgba(128,253,240,1) 18%, rgba(76,255,228,1) 35%, rgba(28,214,186,1) 54%, rgba(23,189,164,1) 71%, rgba(29,179,161,1) 85%, rgba(6,163,142,1) 99%, rgba(6,163,142,1) 100%);
+    width: 80%;
+    padding-top: 80%;
+    background-image: linear-gradient(to bottom, #6bfff5 0%, #80fdf0 18%, #4cffe4 35%, #1cd6ba 54%, #17bda4 71%, #1db3a1 85%, #06a38e 99%, #06a38e 100%);
     border-radius: 50%;
     content: '';
     display: block;
-    top: 10%;
-    z-index: -1;
-    left: 0%;
+    top: 20%;
+    left: 9%;
   }
 }
 
@@ -219,6 +229,8 @@ margin: 0px 5px 0 5px;
   flex-direction: column;
   justify-content:center;
   text-align: center;
+  margin-right: 10px;
+  z-index: 9;
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -240,8 +252,10 @@ margin: 0px 5px 0 5px;
   background-color: white;
   display: flex;
   flex-direction: column;
+  text-align: center;
   justify-content:center;
   text-align: center;
+  z-index: 9;
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -264,7 +278,7 @@ margin: 0px 5px 0 5px;
 }
 
 .fa-check{
-  margin-left: 5px;
+  margin-left: -5px;
   &:focus{
     color:white;
   }
@@ -272,26 +286,32 @@ margin: 0px 5px 0 5px;
 
 
 .container-goal-list{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-
-    margin: 0px 0px 20px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 10px 0px 10px 0px;
+  flex-wrap: wrap;
 }
 
-
+.goal-index-title{
+  margin-top: -20px;
+  color: grey;
+  font-size: 20px;
+}
 
 .button1{
   background: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 15px;
+  padding: 5px 14px;
+  display: inline-block;
+  margin-bottom: 8px;
   border: 1px solid #53D5C7;
   border-radius: 20px;
-  font-size: 11px;
-  height: 30px;
-  margin: 5px 10px;
+  font-size: 14px;
+  margin: 0px 10px;
+  margin-top: 5px;
   p{
     margin-bottom: 0px;
     color: #53D5C7;

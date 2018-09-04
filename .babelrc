@@ -1,18 +1,19 @@
 {
-  "presets": [
-    ["env", {
-      "modules": false,
-      "targets": {
-        "browsers": "> 1%",
-        "uglify": true
-      },
-      "useBuiltIns": true
-    }]
+  presets: [
+    [
+      "env",
+      {
+        modules: false,
+        targets: {
+          node: "current"
+        }
+      }
+    ]
   ],
 
-  "plugins": [
+  plugins: [
     "syntax-dynamic-import",
     "transform-object-rest-spread",
-    ["transform-class-properties", { "spec": true }]
+    ["transform-class-properties", { spec: true }]
   ]
 }

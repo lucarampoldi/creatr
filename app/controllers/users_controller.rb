@@ -3,6 +3,7 @@ class UsersController < ApplicationController
 
   def index
     # All users that are not me or not the ones I liked
+    session[:passed_users] = [] if seen_all_users?
     @users = User.where.not(photo: nil).ordered_ids(displayed_ids)
   end
 
@@ -20,7 +21,8 @@ class UsersController < ApplicationController
 
   def pass
     if session[:passed_users]
-      session[:passed_users] << params[:passed_id].to_i
+      id = params[:passed_id].to_i
+      session[:passed_users] << id unless session[:passed_users].include?(id)
     else
       session[:passed_users] = [params[:passed_id].to_i]
     end
@@ -29,9 +31,18 @@ class UsersController < ApplicationController
 
   private
 
+  def seen_all_users?
+    return false unless session[:passed_users].is_a?(Array)
+    User.count == session[:passed_users].length + 1
+  end
+
   def displayed_ids
     excluded_ids = current_user.liked_users.pluck(:id) << current_user.id
-    seen_ids = session[:passed_users].uniq.reverse
+    if session[:passed_users]
+      seen_ids = session[:passed_users]
+    else
+      seen_ids = []
+    end
     all_ids = User.pluck(:id)
     (all_ids - excluded_ids - seen_ids) + seen_ids
   end

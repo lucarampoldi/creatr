@@ -25,7 +25,7 @@ Rails.application.routes.draw do
     patch "avatars/:user_id", to: "avatars#update", as: "avatar"
   end
 
-  resources :matches, only: [:show] do
+  resources :matches, only: [:show, :index] do
     resources :chatrooms, only: [:create] do
     end
   end

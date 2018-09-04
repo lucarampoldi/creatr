@@ -1,0 +1,17 @@
+<div class="match-index">
+  <div class="match-index__navbar">
+  </div>
+
+  <p class="match-index__header">Get to know your matches</p>
+  <div class="match-index__cards-wrapper">
+    <% @matches.each do |match| %>
+      <%= match.matched_id %>
+      <%= match.matcher_id %>
+      <p>--------</p>
+
+    <% end %>
+  </div>
+</div>
+     <!--  <%# 5.times do %>
+          <%#= render "shared/match-index-card" %>
+      <%# end %> -->

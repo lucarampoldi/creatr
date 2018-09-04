@@ -1,0 +1,17 @@
+.match-index-card {
+  display:flex;
+  padding: 15px;
+  align-items: center;
+  background-color: white;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.02);
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+    .match-index-card__image {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-right: 15px;
+    }

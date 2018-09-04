@@ -6,5 +6,10 @@
 <%= render "shared/skills-card", user: @user %>
 <!--<%#= render "shared/certificate-card", user: @user %> -->
 
+      <%= form_for(@like) do |f| %>
+        <%= f.text_field :receiver_id, value: @user.id, type: :hidden %>
+        <%= f.button "Is it your match?", class: "btn btn-primary gradient" %>
+      <% end %>
+
 
 

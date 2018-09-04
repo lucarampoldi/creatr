@@ -1,88 +1,58 @@
-.profil_container {
-  position: relative;
+
+.user-banner-profil{
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 25vh;
+  border: 1px solid rgb(240,240,240);
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07), 0 1px 0 0 rgba(0,0,0,0.03);
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  .user-banner-title-profil {
+    color: #404040 ;
+    font-size: 20px;
+    margin: 10px 0px 4px 15px;
+    flex: 50%;
+
+  }
+}
+
+
+
+
+.user-profil-info{
   display: flex;
   flex-direction: column;
-  height: 60vh;
-  .top-banner{
-    height: 50%;
-    flex-basis: 50%;
-    flex-shrink: 0;
-    background: #5AB2B7 ;
-
-
-  //background: rgb(6,122,246);
-  //background: linear-gradient(90deg, rgba(6,122,246,1) 0%, rgba(38,204,255,1) 35%, rgba(71,255,211,1) 100%);
-  //animation: color-me-in 8s steps(3) infinite;
-
-//}
-//@keyframes color-me-in {
-  /* You could think of as "step 1" */
-  //0%{
-    //background: rgb(6,122,246);
-    //background: linear-gradient(90deg, rgba(6,122,246,1) 0%, rgba(38,204,255,1) 35%, rgba(71,255,211,1) 100%);
-  //}
-  //50% {
-    //background: rgb(71,255,211);
-    //background: linear-gradient(90deg, rgba(71,255,211,1) 0%, rgba(38,204,255,1) 35%, rgba(6,122,246,1) 100%);
-  //}
-  //100%{
-    //background: rgb(6,122,246);
-    //background: linear-gradient(90deg, rgba(6,122,246,1) 0%, rgba(38,204,255,1) 35%, rgba(71,255,211,1) 100%);
-  //}
-//}
-
-    .user-title {
-      height: 20%;
-      font-size: 25px;
-      text-align: center;
-      color: white;
-      margin-top: 50px
-    }
-  }
- }
-
-  .bottom-banner {
-    background-color: white;
-    padding: 40px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .user-des {
-       margin-top: 40px;
-       text-align: center;
-      h1 {
-
-        font-size: 16px;
-        color: 3b3b3b;
-        line-height: 1.2;
-      }
-
-    }
-  }
-
-  .user-photo {
-    position: absolute;
-    top: calc(50% - 90px);
-    left: calc(50% - 70px);
-    background-color: gray;
-    border: 1px solid white;
-    object-fit: cover;
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-  }
-
-
-
-hr {
-  background-color:#c4c4c4;
-  color: white;
-  border:#FF0000;
-  height:1px;
-  margin: 0;
+  margin: 13px 0px 0px 15px;
 }
+
+.user-profil-box{
+display: flex;
+flex-direction: column;
+padding: 0px 0px 4px 0px;
+}
+
+
+.user-row-profil{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3px;
+}
+
+.fa-size-profil{
+font-size: 13px;
+color: #6A6A6A;
+margin: 0px 5px 0 5px;
+
+
+}
+.user-size-profil{
+  font-size: 13px;
+  font-weight: lighter;
+  color: #989898;
+}
+
+
 
 
 //banner landing page

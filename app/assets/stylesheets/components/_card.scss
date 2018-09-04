@@ -1,163 +1,18 @@
-//skills-card
-.skills-container{
-background-color: white;
-padding: 10px;
-}
-.skills {
-  padding: 0 10px;
-  h4{
-    color: #c4c4c4;
-    text-align: center;
-  }
-}
-
-.skill-list{
-
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  background-color: white;
-  padding: 15px 50px;
-
-  span {
-    color: #5AB2B7;
-    margin-right: 3px;
-
-  }
-}
-
-//goals-card
-
-.goals-container {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-
-
-  .goal h4{
-    height: 20%;
-    font-size: 25px;
-    text-align: center;
-    color: #c4c4c4;
-
-  }
-
-  .goal-def h5{
-    font-size: 16px;
-    line-height: 1.2;
-    text-align: center;
-    color: #3b3b3b;
-  }
-}
-
-.goals-des-container{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: white;
-    padding: 15px 50px;
-}
-
-.goal h4{
-  color: #c4c4c4;
-
-}
-
-
-.goals-button{
-  background: white;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0px 12px;
-  border: 1px solid #5AB2B7;
-  border-radius: 20px;
-  font-size: 14px;
-  height: 30px;
-  margin: 5px 10px;
-    .btn-text {
-      color: #5AB2B7;
-
-
-  }
-}
-// certificates start here
-.certificate-container{
-  background-color: white;
-  padding: 10px 20px;
-}
-
-.certificates{
- h4{
-  color: #c4c4c4;
-}
-
-}
-.certificate-list{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 10px;
-}
-
-
-
-
-
-//achievement-card
-.container-achievement{
-  background-color: white;
-  padding: 10px;
-  text-align: center;
-  h4{
-    font-size: 23px;
-    color: #c4c4c4;
-  }
-}
-.avievement-description{
-  text-align: center;
-  h1{
-    font-size: 16px;
-    line-height: 1.2;
-
-  }
-}
-
-//social-links
-.social-links-container{
-  background-color: white;
-  padding: 10px;
-}
-
-.social-links{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 50px;
-}
 
 
 // platforms start here
-.platform-container{
-  background-color: white;
-  padding: 10px 20px;
-  }
+// .platform-container{
+//   background-color: white;
+//   padding: 10px 20px;
+//   }
 
-.platform-list{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 10px;
-  }
+// .platform-list{
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   padding: 0 10px;
+//   }
 
 
 //index-card
@@ -170,7 +25,8 @@ padding: 10px;
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07), 0 1px 0 0 rgba(0,0,0,0.03);
   border-radius: 10px;
   width: 80%;
-  margin: 20px auto;
+  margin: 0px auto;
+  margin-bottom: 25px;
 
 }
 
@@ -250,7 +106,7 @@ margin: 0px 5px 0 5px;
   font-size: 15px;
   margin: 0px 20px 20px 20px;
   line-height: 1.4;
-  padding: 28px;
+  padding: 10px;
   padding-top: 0px;
   padding-bottom: 0px;
   font-weight: 300;
@@ -260,8 +116,8 @@ margin: 0px 5px 0 5px;
     content: '"';
     display: block;
     position: absolute;
-    top: -8px;
-    left: 12px;
+    top: -10px;
+    left: -1px;
     height: 10px;
     color: #53D5C7;
     font-size: 28px;
@@ -277,13 +133,6 @@ margin: 0px 5px 0 5px;
       font-size: 28px;
   }
 }
-
-
-
-
-
-
-
 
 
 .user-box {
@@ -347,8 +196,8 @@ margin: 0px 5px 0 5px;
   overflow: hidden;
   margin-bottom: 80px;
   position: relative;
-  padding: 0px 133px;
-  padding-bottom: 38px;
+  padding: 0px 118px;
+  padding-bottom: 29px;
 
   &:after{
     position: absolute;
@@ -422,14 +271,12 @@ margin: 0px 5px 0 5px;
 }
 
 
-
-
 .container-goal-list{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 
-    margin: 20px;
+    margin: 0px 0px 20px 0px;
 }
 
 
@@ -442,7 +289,7 @@ margin: 0px 5px 0 5px;
   padding: 10px 15px;
   border: 1px solid #53D5C7;
   border-radius: 20px;
-  font-size: 14px;
+  font-size: 11px;
   height: 30px;
   margin: 5px 10px;
   p{

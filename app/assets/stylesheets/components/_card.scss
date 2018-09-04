@@ -254,6 +254,7 @@ margin: 0px 5px 0 5px;
   flex-direction: column;
   text-align: center;
   justify-content:center;
+  align-items: center;
   text-align: center;
   z-index: 9;
   width: 60px;
@@ -277,6 +278,11 @@ margin: 0px 5px 0 5px;
   }
 }
 
+.new_like{
+  z-index: 9;
+  justify-content: center;
+  align-items: center;
+}
 .fa-check{
   margin-left: -5px;
   &:focus{

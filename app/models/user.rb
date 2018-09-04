@@ -12,15 +12,24 @@ class User < ApplicationRecord
   has_many :liked_users, through: :given_likes, source: :receiver
   has_many :liked_by_users, through: :received_likes, source: :originator
 
+
+  scope :ordered_ids, ->(ids) {
+    order = sanitize_sql_array(
+      ["position((',' || id::text || ',') in ?)", ids.join(',') + ',']
+    )
+    where(id: ids).order(order)
+  }
+
   has_many :messages, dependent: :destroy
 
+
   def matches
-    Match.where("matcher_id = :id OR matched_id = :id", id: self.id)
+    Match.where("matcher_id = :id OR matched_id = :id", id: id)
   end
 
   def matched_users
     ids = matches.pluck(:matcher_id, :matched_id).flatten.reject do |e|
-      e == self.id
+      e == id
     end
     User.find(ids)
   end

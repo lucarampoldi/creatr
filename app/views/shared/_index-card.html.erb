@@ -1,4 +1,4 @@
-<div class="user-card-index">
+<div class="user-card-index hidden" data-user-id="<%= user.id %>">
   <div class="user-card-container">
     <%= link_to user_path(user) do %>
       <div class="user-banner" style="background-image: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), url('<%= user.photo&.url %>');">
@@ -46,8 +46,11 @@
       <i class="fas fa-times fa-2x" style= ></i>
     <% end %>
 
-    <button class="liker">
-      <i class="fas fa-check fa-2x" ></i>
-    </button>
+    <%= form_for(Like.new) do |f| %>
+      <%= f.text_field :receiver_id, value: user.id, type: :hidden %>
+      <%= f.button class: "liker" do %>
+        <i class="fas fa-check fa-2x" ></i>
+      <% end %>
+    <% end %>
   </div>
 </div>

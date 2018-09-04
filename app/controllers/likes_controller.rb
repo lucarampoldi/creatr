@@ -9,6 +9,16 @@ class LikesController < ApplicationController
     if match
       redirect_to match_path(match)
     else
+      decide_on_redirect
+    end
+  end
+
+  private
+
+  def decide_on_redirect
+    if URI(request.referer).path == users_path
+      head :no_content
+    else
       redirect_to user_path(receiver)
     end
   end

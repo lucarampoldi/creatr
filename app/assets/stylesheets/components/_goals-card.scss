@@ -7,23 +7,22 @@
 
 
   .goal {
-
-    font-size: 18px;
-    text-align: center;
-   color: #6A6A6A;
+  margin-left: 20px;
+  font-size: 18px;
+  color: #6A6A6A;
 
   }
 
 }
 
 .goals-des-container{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: white;
-    padding: 15px 50px;
-    margin-bottom: 10px;
+  display: flex;
+  flex-direction: flex-start;
+  justify-content: flexr;
+  flex-wrap: wrap;
+  background-color: white;
+  padding: 15px 20px;
+  margin-bottom: 10px;
 }
 
 
@@ -31,16 +30,15 @@
 
 .goals-button{
   background: white;
-
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0px 12px;
-  border: 1px solid #53D5C7 ;
+  padding: 5px 14px;
+  border: 1px solid #53D5C7;
   border-radius: 20px;
-  font-size: 11px;
-  height: 30px;
+  font-size: 14;
   margin: 5px 10px;
+
     .btn-text {
       color: #53D5C7;
 

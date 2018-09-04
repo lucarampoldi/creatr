@@ -24,6 +24,7 @@
           %>
           <%= f.input :role,
                       input_html: {
+                        maxlength: 40,
                         value: f.object.title,
                         placeholder: "Entrepreneur",
                       }

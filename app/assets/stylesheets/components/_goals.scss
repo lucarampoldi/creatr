@@ -1,0 +1,8 @@
+input[type=checkbox]:checked ~ label {
+  background-color: orange;
+}
+
+input[type=checkbox] ~ label {
+  background-color:red;
+  color:black;
+}

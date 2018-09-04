@@ -2,7 +2,7 @@
   <div class="onboarding-heading text-center">
     <h1 class="onboarding-title">Your Bio</h1>
     <p class="onboarding-description no-padding">
-      Hey stranger!
+      Hello, stranger!
     </p>
   </div>
 
@@ -14,15 +14,12 @@
                       as: :text,
                       label: "Bio",
                       input_html: {
+                        style: "width: 370px; height: 100px;",
+                        maxlength: 150,
+                        size: 40,
                         value: f.object.description,
-                        placeholder: "What's your story?",
-                      }
-          %>
-          <%= f.input :achievement,
-                      as: :text,
-                      input_html: {
-                        value: f.object.achievement,
-                        placeholder: "Your proudest moment?",
+                        placeholder: "What's your story?
+What brought you here?",
                       }
           %>
           <%= f.submit "Proceed to skills", class: "btn btn-primary btn-block gradient" %>

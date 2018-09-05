@@ -4,6 +4,13 @@ class ChatroomsController < ApplicationController
    @user = current_user
   end
 
+ def index
+    @chatrooms = current_user.chatrooms
+    # @matches1 = Match.where(matcher_id: current_user.id)
+    # @matches2 = Match.where(matched_id: current_user.id)
+    # @matches = @matches1 + @matches2
+  end
+
   def create
     @match = Match.find(params[:match_id])
     matcher = User.find(@match.matcher_id)

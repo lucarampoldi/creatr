@@ -9,13 +9,13 @@ class LikesController < ApplicationController
     if match
       redirect_to match_path(match)
     else
-      decide_on_redirect
+      decide_on_redirect(receiver)
     end
   end
 
   private
 
-  def decide_on_redirect
+  def decide_on_redirect(receiver)
     if URI(request.referer).path == users_path
       head :no_content
     else

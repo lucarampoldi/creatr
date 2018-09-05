@@ -22,6 +22,9 @@ class User < ApplicationRecord
 
   has_many :messages, dependent: :destroy
 
+  def chatrooms
+    Chatroom.where("matcher_id = :id OR matched_id = :id", id: id)
+  end
 
   def matches
     Match.where("matcher_id = :id OR matched_id = :id", id: id)

@@ -8,7 +8,7 @@ u1 = User.create!(
                 first_name:"Francine",
                 last_name:"Bachem",
                 photo: File.open(Rails.root + "app/assets/images/u1.jpeg"),
-                email:"tombachem@example.com",
+                email:"francinebachem@example.com",
                 password:"123456",
                 title:"Cancellor of CODE University",
                 description:"Serial entrepreneur and investor. Looking for Startups to invest in. ",

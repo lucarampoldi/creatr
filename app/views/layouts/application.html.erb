@@ -11,19 +11,21 @@
   </head>
   <body>
 
-    <% if controller_name == "onboarding" %>
-     <%= render "shared/navbar-onboarding" %>
+    <% if controller_name == "infos" %>
+      <%= render "shared/navbar-onboarding" %>
+    <% elsif controller_name == "avatars" %>
+      <%= render "shared/navbar-onboarding" %>
+    <% elsif controller_name == "bios" %>
+      <%= render "shared/navbar-onboarding" %>
+    <% elsif controller_name == "skills" %>
+      <%= render "shared/navbar-onboarding" %>
+    <% elsif controller_name == "goals" %>
+      <%= render "shared/navbar-onboarding" %>
     <% elsif controller_name == "users" %>
       <%= render "shared/index-navbar" %>
     <% elsif controller_name == "chatroooms" %>
       <%= render "shared/chat-navabar" %>
     <% end %>
-
-
-
-
-
-
 
     <%= yield %>
     <%= javascript_include_tag 'application' %>

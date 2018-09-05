@@ -36,7 +36,10 @@
   </div>
 
   <div class="match-card__button-wrapper">
-    <%= link_to "Start creating", root_path, class: "match-card__skip-button" %>
+    <%= link_to match_chatrooms_path(@match),:method => "post" do %>
+      <button class= "btn btn-primary btn-block gradient"> Start Chatting</button>
+    <% end %>
+
 
     <%= link_to "Back to swiping", users_path, class: "match-card__skip-button" %>
   </div>

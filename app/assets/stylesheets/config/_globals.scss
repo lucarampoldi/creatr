@@ -4,17 +4,19 @@ form label {
 }
 
 .btn.gradient {
+  background: linear-gradient(to right, rgb(28, 216, 210), rgb(145, 240, 230));
+  border: none;
+  text-decoration: none;
+}
 
-
-background: linear-gradient(to right, rgb(28, 216, 210), rgb(145, 240, 230));
-border: none;
+.btn.gradient:focus {
+  text-decoration: none;
 }
 
 .btn.border {
-color: #4bfeeb ;
-border: 1px solid #4bfeeb;
-background-color: white;
-text-align: center;
-margin-top: 10px;
-
+  color: #4bfeeb ;
+  border: 1px solid #4bfeeb;
+  background-color: white;
+  text-align: center;
+  margin-top: 10px;
 }

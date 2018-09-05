@@ -24,7 +24,6 @@ class ChatroomsController < ApplicationController
       redirect_to chatroom_path(room)
     else
       # TODO send it back
-      raise
     end
   end
 end

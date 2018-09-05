@@ -1,7 +1,7 @@
 
 
 
-<div class="show-container">
+<div class="show-container" data-user-id="<%= @user.id %>">
 
 <%= render "shared/banner-profil", user: @user %>
 <%= render "shared/talk-about", user: @user %>
@@ -10,20 +10,15 @@
 
 <%= render "shared/skills-card", user: @user %>
 
-      <%= form_for(@like) do |f| %>
-        <%= f.text_field :receiver_id, value: @user.id, type: :hidden %>
-        <%= f.button "Is it your match?", class: "btn btn-primary gradient" %>
-      <% end %>
-
-
   <div class="container-sticky">
 
     <div class="match-container">
-      <%= link_to users_path, class: "disliker" do  %>
+      <%= link_to "#", class: "disliker" do  %>
         <i class="fas fa-times fa-2x" style= ></i>
       <% end %>
 
       <%= form_for(Like.new) do |f| %>
+        <%= f.text_field :receiver_id, value: @user.id, type: :hidden %>
 
         <%= f.button class: "liker" do %>
           <i class="fas fa-check fa-2x" ></i>

@@ -12,6 +12,7 @@ function placeDislikeListeners() {
     const dislikeButton = card.querySelector(".disliker");
     dislikeButton.addEventListener("click", elt => {
       card.classList.toggle("hidden");
+      console.log(card.dataset)
       notifySeen(card.dataset.userId);
       loadNext();
     });

@@ -11,7 +11,7 @@ u1 = User.create!(
                 email:"tombachem@example.com",
                 password:"123456",
                 title:"Cancellor of CODE University",
-                description:"Serial entrepreneur and investor.",
+                description:"Entrepreneur and investor. Looking for brilliant eningeering teams",
                 location:"Berlin, Germany",
                 industry:"Software & IT",
                 linkedin_url:"https://www.linkedin.com/in/thomasbachem/",

@@ -1,10 +1,36 @@
+
+<%= render "shared/index-navbar" %>
+
+
+<div class="show-container">
+
 <%= render "shared/banner-profil", user: @user %>
 <%= render "shared/talk-about", user: @user %>
 <%= render "shared/goals-card", user: @user %>
 <%= render "shared/social-links-card", uder: @user %>
 
 <%= render "shared/skills-card", user: @user %>
-<!--<%#= render "shared/certificate-card", user: @user %> -->
+
+      <%= form_for(@like) do |f| %>
+        <%= f.text_field :receiver_id, value: @user.id, type: :hidden %>
+        <%= f.button "Is it your match?", class: "btn btn-primary gradient" %>
+      <% end %>
 
 
+  <div class="container-sticky">
 
+    <div class="match-container">
+      <%= link_to "#", class: "disliker" do  %>
+        <i class="fas fa-times fa-2x" style= ></i>
+      <% end %>
+
+      <%= form_for(Like.new) do |f| %>
+
+        <%= f.button class: "liker" do %>
+          <i class="fas fa-check fa-2x" ></i>
+        <% end %>
+      <% end %>
+      </div>
+  </div>
+
+</div>

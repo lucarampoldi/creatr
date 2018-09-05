@@ -1,13 +1,15 @@
+<%= render "shared/index-navbar" %>
 <div class="user-card-index hidden" data-user-id="<%= user.id %>">
   <div class="user-card-container">
     <%= link_to user_path(user) do %>
-      <div class="user-banner" style="background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('<%= user.photo&.url %>');">
+      <div class="user-banner" style="background-image: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), url('<%= user.photo&.url %>');">
           <h1 class="user-banner-title"><%= user.first_name %></h1>
       </div>
     <% end %>
-
+  <div class="index__card_content_wrap">
     <div class="user-index-info">
       <div class="user-index-box">
+
         <div class="user-row">
           <i class="fas fa-warehouse fa-size"></i>
           <div class="user-size"> <%= user.industry %></div>
@@ -21,16 +23,15 @@
       </div>
     </div>
 
-    <div class="talk-to-user-about">
-      Talk to <%= user.first_name %> about
-    </div>
-
     <div class="user-index-bio-box">
       <div class="user-index-bio">
         <%= user.description %>
       </div>
     </div>
 
+    <div class="goal-index-title">
+        Goals
+      </div>
     <div class="container-goal-list">
       <% user.goal_list.each do |goal| %>
         <div class="button1">
@@ -39,6 +40,7 @@
       <% end %>
     </div>
   </div>
+</div>
 
   <div class="match-container">
     <%= link_to "#", class: "disliker" do  %>
@@ -52,5 +54,5 @@
       <% end %>
     <% end %>
   </div>
-
 </div>
+

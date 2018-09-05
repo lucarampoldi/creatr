@@ -1,6 +1,7 @@
 class ChatroomsController < ApplicationController
   def index
     @chatrooms = Chatroom.all
+    raise
   end
 
   def show

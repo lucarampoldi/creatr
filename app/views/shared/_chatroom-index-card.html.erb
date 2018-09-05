@@ -1,0 +1,20 @@
+<% @chatrooms.each do |chatroom| %>
+
+  <% user = chatroom.matched if chatroom.matched != current_user %>
+  <% user = chatroom.matcher if chatroom.matcher != current_user %>
+
+  <%= link_to chatroom_path(chatroom) do %>
+
+    <div class="match-index-card">
+      <%= cl_image_tag user.photo, class: "match-index-card__image" %>
+      <div class="match-index-card__message">
+        <%= user.first_name %>
+        <%= user.last_name %>
+        <br>
+        <%= user.title %>
+      </div>
+    </div>
+
+  <% end %>
+
+<% end %>

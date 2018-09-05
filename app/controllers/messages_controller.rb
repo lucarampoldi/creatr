@@ -5,13 +5,6 @@
     @message.chatroom = @chatroom
     @message.user = current_user
     if @message.save
-      ActionCable.server.broadcast("chatroom_#{@chatroom.id}", {
-      message_partial: ApplicationController.renderer.render(
-        partial: "messages/message",
-        locals: { message: @message, user_is_messages_author: false }
-      ),
-      current_user_id: current_user.id
-    })
       respond_to do |format|
         format.html { redirect_to chatroom_path(@chatroom) }
         format.js

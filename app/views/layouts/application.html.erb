@@ -10,7 +10,23 @@
     <%= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
   <body>
-    <%= render 'shared/navbar' %>
+
+    <% if controller_name == "infos" %>
+      <%= render "shared/navbar-onboarding" %>
+    <% elsif controller_name == "avatars" %>
+      <%= render "shared/navbar-onboarding" %>
+    <% elsif controller_name == "bios" %>
+      <%= render "shared/navbar-onboarding" %>
+    <% elsif controller_name == "skills" %>
+      <%= render "shared/navbar-onboarding" %>
+    <% elsif controller_name == "goals" %>
+      <%= render "shared/navbar-onboarding" %>
+    <% elsif controller_name == "users" %>
+      <%= render "shared/index-navbar" %>
+    <% elsif controller_name == "chatroooms" %>
+      <%= render "shared/chat-navabar" %>
+    <% end %>
+
     <%= yield %>
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>

@@ -1,0 +1,31 @@
+
+ <div class="navbar-wagon">
+  <!-- Logo -->
+
+<!-- Navbar right-side links -->
+  <% if user_signed_in? %>
+    <div class="navbar-wagon-item">
+      <%= link_to "#" do %>
+         <i class="fas fa-user" style="color: #7B7979;"></i>
+      <% end %>
+    </div>
+    <div class="navbar-wagon-item">
+      <%= link_to root_path, class: "navbar-wagon-brand" do %>
+        <%= image_tag "logo.png", height: 50 %>
+      <% end %>
+    </div>
+    <div class="navbar-wagon-item">
+      <%= link_to chatrooms_path do %>
+        <i class="fas fa-comment" style="color: #7B7979"></i>
+      <% end %>
+    </div>
+  <% else %>
+    <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
+  <% end %>
+</div>
+
+
+<!-- link to messages -->
+<!-- Logo -->
+<!-- link to # -->
+

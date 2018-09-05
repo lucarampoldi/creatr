@@ -3,7 +3,14 @@ Rails.application.routes.draw do
   devise_for :users, controllers: { registrations: "registrations" }
   root to: 'pages#home'
 
-  resources :users, only: [:show, :index, :update]
+
+  resources :users, only: [:show, :index, :update] do
+    collection do
+      get 'pass', to: "users#pass"
+    end
+  end
+
+
   resources :likes, only: :create
 
   get "pages/preview-match", to: "pages#preview", as: "preview"

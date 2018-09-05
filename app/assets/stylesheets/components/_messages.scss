@@ -53,11 +53,31 @@ input.form-control {
   }
 }
 .chat-header {
-  background-color: #4F2F4C;
+  display: flex;
+  flex-direction: column;
   color: white;
-  padding: 10px 20px;
+  padding: -10px 20px;
   margin-top: 10px;
-  h4 {
-    margin: 0;
+  text-align: center;
+  justify-content: center;
+
   }
+
+.chat-name {
+    margin: 0;
+    color: #454545;
+    font-size: 14px;
+}
+
+.chat-title {
+    margin: 0;
+    color: #454545;
+    font-size: 14px;
+}
+
+.chat-header-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  align-items: center;
 }

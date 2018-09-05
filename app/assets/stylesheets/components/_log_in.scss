@@ -1,3 +1,11 @@
+
+
+.container-login{
+ padding: 20px;
+background-color: white;
+}
+
+
 .login{
   text-align: center;
   font-size: 30px;
@@ -16,4 +24,12 @@
     outline: none;
     border: 1px solid  #91F0E6;
     box-shadow: none;
+}
+
+
+
+.forgot_password_color{
+  color: #454545;
+  font-weight: lighter;
+  font-size: 16px;
 }

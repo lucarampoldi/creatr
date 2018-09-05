@@ -5,11 +5,14 @@ form label {
 
 .btn.gradient {
 
-background: linear-gradient(90deg, rgba(0,145,130,1) 0%, rgba(75,254,235,1) 57%, rgba(75,254,235,1) 94%);
-  border: none;
+background: linear-gradient(to right, rgb(28, 216, 210), rgb(145, 240, 230));
+border: none;
 }
 
 .btn.border {
-  background-color: white;
-  border: #4bfeeb;
+color: #4bfeeb ;
+border: 1px solid #4bfeeb;
+background-color: white;
+text-align: center;
+margin-top: 10px;
 }

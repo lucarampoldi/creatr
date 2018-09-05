@@ -1,16 +1,16 @@
 .onboarding_avatar {
 
-
+  object-fit: cover;
   border-radius: 50%;
-  height: 200px;
-  width: 200px;
-  box-shadow: 2px 2px 5px 0px #D6ECED;
+  height: 140px;
+  width: 140px;
   background-color: white;
-  border: 1px solid #D6ECED;
+  border: 1px solid #E3E3E3;
 }
 
 .avatar-wrapper {
   display: flex;
   justify-content: center;
   text-align: center;
+
 }

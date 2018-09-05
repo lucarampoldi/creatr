@@ -11,20 +11,16 @@
   </head>
   <body>
 
-    <% if controller_name == "infos" %>
-      <%= render "shared/navbar-onboarding" %>
-    <% elsif controller_name == "avatars" %>
-      <%= render "shared/navbar-onboarding" %>
-    <% elsif controller_name == "bios" %>
-      <%= render "shared/navbar-onboarding" %>
-    <% elsif controller_name == "skills" %>
-      <%= render "shared/navbar-onboarding" %>
-    <% elsif controller_name == "goals" %>
-      <%= render "shared/navbar-onboarding" %>
-    <% elsif controller_name == "users" %>
+    <% if controller_name == "users" %>
       <%= render "shared/index-navbar" %>
-    <% elsif controller_name == "chatroooms" %>
-      <%= render "shared/chat-navabar" %>
+      <% elsif controller_name == "chatrooms" %>
+        <% if params[:action] == 'index' %>
+          <%= render "shared/chatroom-navbar" %>
+        <% else params[:action] == 'show' %>
+          <%= render "shared/chat-navbar" %>
+       <% end %>
+    <% else  %>
+      <%= render "shared/navbar-onboarding" %>
     <% end %>
 
     <%= yield %>

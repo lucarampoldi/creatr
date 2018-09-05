@@ -19,7 +19,7 @@ class LikesController < ApplicationController
     if URI(request.referer).path == users_path
       head :no_content
     else
-      redirect_to user_path(receiver)
+      redirect_to users_path
     end
   end
 end

@@ -1,10 +1,29 @@
+<% other_user = @chatroom.matched if @chatroom.matched != current_user %>
+<% other_user = @chatroom.matcher if @chatroom.matcher != current_user %>
+
+
 <div class="container">
   <div class="row">
     <div class="col-sm-6 col-sm-offset-3">
 
-      <div class="chat-header"><h4>Time to create</h4></div>
-      <div class="messages">
+      <div class="chat-header">
 
+          <div class="chat-name">
+            <%= other_user.first_name%>
+          </div>
+
+          <div class="chat-image">
+            <%= link_to user_path(other_user) do %>
+            <%= cl_image_tag other_user.photo, class: "chat-header-image"%>
+            <% end %>
+          </div>
+
+          <div class="chat-title">
+            <%= other_user.title%>
+          </div>
+
+      </div>
+      <div class="messages">
         <% @chatroom.messages.each do |message| %>
           <%= render "messages/message", message: message, user_is_messages_author: message.user == current_user, user: @user %>
         <% end %>

@@ -1,0 +1,19 @@
+.login{
+  text-align: center;
+  font-size: 30px;
+  color: #91F0E6;
+}
+
+
+.form-inputs{
+  background-color: white;
+}
+
+
+
+
+.input.form-control:focus {
+    outline: none;
+    border: 1px solid  #91F0E6;
+    box-shadow: none;
+}

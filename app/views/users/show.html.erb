@@ -10,12 +10,6 @@
 
 <%= render "shared/skills-card", user: @user %>
 
-      <%= form_for(@like) do |f| %>
-        <%= f.text_field :receiver_id, value: @user.id, type: :hidden %>
-        <%= f.button "Is it your match?", class: "btn btn-primary gradient" %>
-      <% end %>
-
-
   <div class="container-sticky">
 
     <div class="match-container">
@@ -24,6 +18,7 @@
       <% end %>
 
       <%= form_for(Like.new) do |f| %>
+        <%= f.text_field :receiver_id, value: @user.id, type: :hidden %>
 
         <%= f.button class: "liker" do %>
           <i class="fas fa-check fa-2x" ></i>

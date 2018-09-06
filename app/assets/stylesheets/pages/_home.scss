@@ -13,7 +13,41 @@ text-align: center;
 
 .value_image{
  max-width: 100%;
-display:block;
-height: auto;
+  display:block;
+  height: auto;
 }
 
+.btn.home-page-btn {
+  background-color: none;
+  max-width: 200px;
+  margin: auto;
+  margin-top: 20px;
+  border-width: 2px;
+  color: #1ac2aa;
+  border-radius: 200px;
+  background: none;
+  border-color: #1ac2aa;
+  margin-bottom: 20px;
+}
+
+.landing-picture {
+  width: 100%;
+  margin-top: -45px;
+}
+
+.value-prop__header {
+  font-size: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  color: #454545;
+  width: 300px;
+  margin-top: 11px;
+  margin-left: 10px;
+}
+
+
+.value-prop__text {
+  font-size: 18px;
+  margin-left: 10px;
+  width: 300px;
+}

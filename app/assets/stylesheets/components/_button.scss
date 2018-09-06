@@ -1,0 +1,21 @@
+.btn.gradient {
+  background: linear-gradient(to right, rgb(41, 188, 174), rgb(38, 208, 220));
+  border: none;
+  text-decoration: none;
+}
+
+.btn.gradient:focus {
+  text-decoration: none;
+}
+
+.btn.border {
+  color:  #1DB7A8 ;
+  border: 1px solid #1DB7A8 ;
+  background-color: white;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.btn.call-to-action {
+  background-color: #1DB7A8;
+}

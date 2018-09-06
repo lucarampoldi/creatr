@@ -1,22 +1,31 @@
-<div class="navbar-wagon">
+
+ <div class="navbar-wagon">
   <!-- Logo -->
+
 
 <!-- Navbar right-side links -->
   <% if user_signed_in? %>
     <div class="navbar-wagon-item">
-      <%= link_to users_path, class: "navbar-wagon-brand" do %>
-        <i class="fas fa-chevron-left" style="color: #7B7979"></i>
-      <% end %>
+       <i class="fas fa-user" style="color: #53D5C7;"></i>
     </div>
+
     <div class="navbar-wagon-item">
       <%= link_to users_path, class: "navbar-wagon-brand" do %>
         <%= image_tag "logo.png", height: 50 %>
       <% end %>
     </div>
+
     <div class="navbar-wagon-item">
-        <i class="fas fa-comment" style="color: #53D5C7"></i>
+      <div class="dropdown">
+        <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+          <li><%= link_to 'Matches', chatrooms_path %></li>
+          <li><%= link_to "Sign-out",  destroy_user_session_path, method: "delete" %></li>
+
+        </ul>
+      </div>
     </div>
   <% else %>
     <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
-  <% end %>
+    <% end %>
 </div>

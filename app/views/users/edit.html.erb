@@ -1,10 +1,11 @@
 
-<div class="show-container">
+  <div class="show-container">
+  <div class="wrapper-show">
+    <%= render "shared/banner-profil", user: current_user %>
+    <%= render "shared/talk-about", user: current_user %>
+    <%= render "shared/goals-card", user: current_user %>
+    <%= render "shared/social-links-card", user: current_user %>
+    <%= render "shared/skills-card", user: current_user %>
 
-  <%= render "shared/banner-profil", user: current_user %>
-  <%= render "shared/talk-about", user: current_user %>
-  <%= render "shared/goals-card", user: current_user %>
-  <%= render "shared/social-links-card", user: current_user %>
-  <%= render "shared/skills-card", user: current_user %>
-
+  </div>
 </div>

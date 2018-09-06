@@ -1,26 +1,25 @@
-<div class="show-container" data-user-id="<%= @user.id %>">
+<div class="show-background-container">
+  <div class="show-container" data-user-id="<%= @user.id %>">
+  <div class="wrapper-show">
+  <%= render "shared/banner-profil", user: @user %>
+  <%= render "shared/talk-about", user: @user %>
+  <%= render "shared/goals-card", user: @user %>
+  <%= render "shared/social-links-card", uder: @user %>
+  <%= render "shared/skills-card", user: @user %>
 
-<%= render "shared/banner-profil", user: @user %>
-<%= render "shared/talk-about", user: @user %>
-<%= render "shared/goals-card", user: @user %>
-<%= render "shared/social-links-card", uder: @user %>
-
-<%= render "shared/skills-card", user: @user %>
-
-  <div class="container-sticky">
-
-    <div class="match-container">
-      <%= link_to "#", class: "disliker" do  %>
-        <i class="fas fa-times fa-2x" style= ></i>
-      <% end %>
-
-      <%= form_for(Like.new) do |f| %>
-        <%= f.text_field :receiver_id, value: @user.id, type: :hidden %>
-
-        <%= f.button class: "liker" do %>
-          <i class="fas fa-check fa-2x" ></i>
-        <% end %>
-      <% end %>
   </div>
+   <div class="container-sticky">
 
+      <div class="match-container-show">
+        <%= link_to users_path, class: "arrow" do  %>
+          <i class="far fa-arrow-alt-circle-left fa-2x" style= ></i>
+        <% end %>
+
+        <%= form_for(Like.new) do |f| %>
+          <%= f.text_field :receiver_id, value: @user.id, type: :hidden %>
+
+        <% end %>
+    </div>
+
+  </div>
 </div>

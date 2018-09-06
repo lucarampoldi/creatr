@@ -16,6 +16,19 @@
 
 
 //index-card
+.wrapper-show{
+  background-color: white;
+  border: 0px 1px 1px 1px solid #f0f0f0;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.07), 0 1px 0 0 rgba(0, 0, 0, 0.03);
+  min-height: 160vh;
+  border-radius: 10px;
+}
+.show-background-container {
+  background-color: whitesmoke;
+}
+.show-container{
+  padding: 0px 20px 20px 20px;
+}
 .user-card-index{
   background-color: whitesmoke;
 }
@@ -202,15 +215,15 @@ margin: 0px 5px 0 5px;
 .match-container{
   display: flex;
   flex-direction: row;
-    justify-content: center;
+  justify-content: center;
 
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 120px;
-    overflow: hidden;
-    bottom: 43px;
-    position: relative;
-    padding-bottom: 44px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 120px;
+  overflow: hidden;
+  bottom: 43px;
+  position: relative;
+  padding-bottom: 44px;
 
 
 

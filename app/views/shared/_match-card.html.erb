@@ -35,13 +35,11 @@
      </div>
   </div>
 
-  <div class="match-card__button-wrapper">
-    <%= link_to match_chatrooms_path(@match),:method => "post" do %>
-      <button class= "btn btn-primary btn-block gradient"> Start Chatting</button>
+  <div class="mobile-fixed-bottom">
+    <%= form_with url: match_chatrooms_path(@match), method: :post, local: true do |f| %>
+      <%= f.text_field "match_id", hidden: true %>
+      <%= f.submit "Start Chatting", class: "btn btn-primary btn-block gradient mobile-large"  %>
     <% end %>
-
-
-    <%= link_to "Back to swiping", users_path, class: "btn btn-primary btn-block border" %>
+    <%= link_to "Back to swiping", users_path, class: "btn btn-primary btn-block border mobile-large" %>
   </div>
 </div>
-

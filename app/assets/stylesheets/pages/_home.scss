@@ -1,4 +1,51 @@
 // Specific CSS for your home-page
+
+.container-value-prop{
+  display: flex;
+  flex-direction: column;
+    padding: 20px;
+    /* border: green; */
+    border: 3px solid #1DB7A8;
+    margin: 40px;
+    width: 300px;
+    height: 300px;
+
+    /* text-align: center; */
+    justify-content: center;
+    text-align: center;
+}
+
+.container-values{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+.value{
+  color: #454545;
+  font-size: 30px;
+
+}
+
+.values{
+  margin-left:35;
+}
+.call-to-action-container{
+  margin: 40px;
+  margin-top: 120px;
+}
+
+.container-landing-image{
+  height: 300px;
+  width: 300px;
+}
+
+.landing-picture{
+  height: 400px;
+}
+
+
+
 .text-center{
   margin-bottom: 10px;
 }
@@ -11,9 +58,10 @@
 text-align: center;
 }
 
-.value_image{
+.value_image1{
  max-width: 100%;
 display:block;
 height: auto;
+margin-left: 25px;
 }
 

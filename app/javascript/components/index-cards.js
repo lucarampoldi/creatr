@@ -1,4 +1,11 @@
-function loadNext() {
+function* repeatedArray(arr) {
+  let index = 0;
+  while (true) {
+    yield arr[index++ % arr.length];
+  }
+}
+
+function loadNext(iter) {
   const card = iter.next().value;
   if (card) card.classList.toggle("hidden");
 }
@@ -7,30 +14,30 @@ function notifySeen(id) {
   fetch(`/users/pass?passed_id=${id}`);
 }
 
-function placeDislikeListeners() {
+function placeDislikeListeners(cards, iter) {
   cards.forEach(card => {
     const dislikeButton = card.querySelector(".disliker");
     dislikeButton.addEventListener("click", elt => {
       card.classList.toggle("hidden");
       notifySeen(card.dataset.userId);
-      loadNext();
+      loadNext(iter);
     });
   });
 }
 
-function placeLikeListeners() {
+function placeLikeListeners(cards, iter) {
   cards.forEach(card => {
     const likeButton = card.querySelector(".liker");
     likeButton.addEventListener("click", elt => {
       card.classList.toggle("hidden");
-      loadNext();
+      loadNext(iter);
     });
   });
 }
 
-var cards = Array.from(document.querySelectorAll(".user-card-index"));
-var iter = cards[Symbol.iterator]();
+const cards = Array.from(document.querySelectorAll(".user-card-index"));
+const iter = repeatedArray(cards);
 
-loadNext();
-placeDislikeListeners();
-placeLikeListeners();
+loadNext(iter);
+placeDislikeListeners(cards, iter);
+placeLikeListeners(cards, iter);

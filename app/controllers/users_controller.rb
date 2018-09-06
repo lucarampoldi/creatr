@@ -1,9 +1,10 @@
 class UsersController < ApplicationController
-  before_action :set_cache_headers, only: :index
+  before_action :reset_browser_cache, only: :index
 
   def index
+    # Reset seen users array if seen them all
+    session[:passed_users] = [] if passed_all_users?
     # All users that are not me or not the ones I liked
-    session[:passed_users] = [] if seen_all_users?
     @users = User.where.not(photo: nil).ordered_ids(displayed_ids)
   end
 
@@ -31,23 +32,19 @@ class UsersController < ApplicationController
 
   private
 
-  def seen_all_users?
+  def passed_all_users?
     return false unless session[:passed_users].is_a?(Array)
-    User.count == session[:passed_users].length + 1
+    displayed_ids.count == session[:passed_users].length
   end
 
   def displayed_ids
     excluded_ids = current_user.liked_users.pluck(:id) << current_user.id
-    if session[:passed_users]
-      seen_ids = session[:passed_users]
-    else
-      seen_ids = []
-    end
+    seen_ids = session[:passed_users] || []
     all_ids = User.pluck(:id)
-    (all_ids - excluded_ids - seen_ids) + seen_ids
+    (all_ids - excluded_ids - seen_ids) + seen_ids.reverse
   end
 
-  def set_cache_headers
+  def reset_browser_cache
     response.headers["Cache-Control"] = "no-cache, no-store"
     response.headers["Pragma"] = "no-cache"
     response.headers["Expires"] = "Fri, 01 Jan 1990 00:00:00 GMT"

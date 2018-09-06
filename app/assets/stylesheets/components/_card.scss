@@ -218,7 +218,7 @@ margin: 0px 5px 0 5px;
     position: absolute;
     width: 80%;
     padding-top: 80%;
-    background-image: linear-gradient(to bottom, #6bfff5 0%, #80fdf0 18%, #4cffe4 35%, #1cd6ba 54%, #17bda4 71%, #1db3a1 85%, #06a38e 99%, #06a38e 100%);
+    background-image: linear-gradient(rgb(6, 190, 182), rgb(72, 177, 191));
     border-radius: 50%;
     content: '';
     display: block;
@@ -268,7 +268,7 @@ margin: 0px 5px 0 5px;
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07), 0 1px 0 0 rgba(0,0,0,0.03);
   text-decoration: none;
   i {
-    color: #4EF1FF;
+    color: #6DE3D8;
 
   }
   &:focus {
@@ -317,13 +317,13 @@ margin: 0px 5px 0 5px;
   padding: 5px 14px;
   display: inline-block;
   margin-bottom: 8px;
-  border: 1px solid #53D5C7;
+  border: 1px solid #1DB7A8 ;
   border-radius: 20px;
   font-size: 14px;
   margin: 0px 10px;
   margin-top: 5px;
   p{
     margin-bottom: 0px;
-    color: #53D5C7;
+    color: #1DB7A8 ;
   }
 }

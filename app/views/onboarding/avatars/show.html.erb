@@ -21,7 +21,7 @@
       <%= simple_form_for(@user, url: onboarding_avatar_path(@user)) do |f| %>
         <%= f.input :photo, input_html: {onchange: "readURL(this)"} %>
         <%= f.input :photo_cache, as: :hidden %>
-        <%= f.submit "Proceed to bio", class: "btn btn-primary btn-block gradient"  %>
+        <%= f.submit "Proceed to bio", class: " button btn btn-primary btn-block gradient"  %>
       <% end %>
       <%= link_to "back to personal info", onboarding_infos_path, class: "onboarding-link" %>
     </div>

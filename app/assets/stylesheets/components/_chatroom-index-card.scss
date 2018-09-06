@@ -1,11 +1,29 @@
+
+.match-index-container{
+  height: 100vh;
+  background-color: white;
+}
+
+.match-index__cards-wrapper{
+  padding: 10px;
+}
+.match-index__header{
+  text-align: center;
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  color:#1DB7A8;
+}
+
 .match-index-card {
   display:flex;
-  padding: 15px;
+  padding: 5px;
   align-items: center;
   background-color: white;
-  box-shadow: 3px 3px 3px rgba(0,0,0,0.02);
-  border-radius: 4px;
+  //box-shadow: 3px 3px 3px rgba(0,0,0,0.02);
+  //border-radius: 4px;
   margin-bottom: 15px;
+  border-bottom: 1px solid whitesmoke;
 }
 
     .match-index-card__image {
@@ -15,3 +33,6 @@
       border-radius: 50%;
       margin-right: 15px;
     }
+.match-index-card__message{
+  color: #454545;
+}

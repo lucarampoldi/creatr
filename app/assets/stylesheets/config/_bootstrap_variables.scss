@@ -4,21 +4,21 @@
 // 3. You can override them below!
 
 // General style
-$font-family-sans-serif:  $body-font;
-$headings-font-family:    $headers-font;
-$body-bg:                 $light-gray;
+$font-family-sans-serif: $body-font;
+$headings-font-family: $headers-font;
+$body-bg: $light-gray;
 $font-size-base: 16px;
 
 // Colors
-$gray-base:       $gray;
-$brand-primary:   #5AB2B6;
-$brand-success:   $green;
-$brand-info:      $yellow;
-$brand-danger:    $red;
-$brand-warning:   $orange;
+$gray-base: $gray;
+$brand-primary: #5ab2b6;
+$brand-success: $green;
+$brand-info: $yellow;
+$brand-danger: $red;
+$brand-warning: $orange;
 
 // Buttons & inputs' radius
-$border-radius-base:  8px;
+$border-radius-base: 8px;
 $border-radius-large: 8px;
 $border-radius-small: 8px;
 $btn-primary-border: darken($brand-primary, 1%) !default;
@@ -29,7 +29,6 @@ $body-bg: white;
 // Forms override
 $input-border-radius: 8px;
 $input-border: lightgrey;
-
 
 // Patch to make simple_form compatible with bootstrap 3
 .invalid-feedback {

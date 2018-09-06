@@ -28,11 +28,17 @@
         <% end %>
       </div>
 
-      <div id="create-message">
-        <%= simple_form_for [ @chatroom, Message.new ], html: {autocomplete: "off" }, remote: true do |f| %>
-          <%= f.input :content, label: false %>
-          <%= f.submit %>
+
+    <div class="create-message-container">
+      <%= form_for [ @chatroom, Message.new ], html: {autocomplete: "off" }, remote: true do |f| %>
+        <%= f.text_area :content, class: "message-box" %>
+        <%= f.button "send", class: "message-send" do %>
+          <i class="fab fa-telegram-plane fa-lg"></i>
         <% end %>
+      <% end %>
+    </div>
+
+
       </div>
     </div>
   </div>

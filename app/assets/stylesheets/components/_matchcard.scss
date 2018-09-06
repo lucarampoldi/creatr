@@ -3,17 +3,20 @@
   font-size: 16px;
 }
 
-h1.match-card__heading {
+.match-card__heading {
   text-align: center;
-  color: #5AB2B6;
+  color:#1DB7A8;
+  margin-bottom: 40px;
+  font-size: 30px;
+  margin-top: 20px;
 }
 
 .match-card__users {
-  padding: 20px;
   display: grid;
   grid-column-gap: 40px;
   grid-template-columns: 1fr 1fr;
-
+  margin: 20px;
+  font-size: 16px;
 }
 
 .match-card__user {
@@ -27,8 +30,8 @@ h1.match-card__heading {
 .match-card__image-wrapper {
   background-size: cover;
   background-position: center;
-  height: 170px;
-  width: 170px;
+  height: 130px;
+  width: 130px;
   border-radius: 50%;
   display: inline-block;
   position: relative;
@@ -60,6 +63,7 @@ h1.match-card__heading {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 

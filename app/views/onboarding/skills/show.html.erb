@@ -1,11 +1,11 @@
 
-<div class="container">
+<div class="container-onboarding-bio">
   <div class="row">
     <div class="col-xs-10 col-xs-offset-1">
       <div class="onboarding-heading text-center">
-        <h1 class="onboarding-title">Your Skills</h1>
+        <h1 class="onboarding-title">Skills</h1>
         <p class="onboarding-description no-padding">
-          Add skills to your profile :D
+          What are your skills?
         </p>
       </div>
 
@@ -15,7 +15,7 @@
           <%= f.input :skill_list,
                     label: false,
                     input_html: {
-                      style: "width: 370px; height: 50px;",
+                      style: "width: 272px; height: 40px;",
                       value: f.object.skill_list.join(", "),
                       placeholder: "Tech, Startups...",
                       data: {
@@ -25,14 +25,14 @@
                     }
         %>
           <p class="onboarding-description no-padding">
-            Add links to your profile (Optional) :D
+           Where can we find you online?
           </p>
 
          <%= f.input :github_url,
                       as: :text,
                       label: "Github Url",
                       input_html: {
-                        style: "height: 50px;",
+                        style: "height: 40px;",
                         value: f.object.github_url,
                     }
         %>
@@ -40,7 +40,7 @@
                       as: :text,
                       label: "Dribbble Url",
                       input_html: {
-                        style: "height: 50px;",
+                        style: "height: 40px;",
                         value: f.object.dribbble_url,
                     }
         %>
@@ -48,7 +48,7 @@
                       as: :text,
                       label: "Linkedin Url",
                       input_html: {
-                        style: "height: 50px",
+                        style: "height: 40px",
                         value: f.object.linkedin_url,
                     }
         %>

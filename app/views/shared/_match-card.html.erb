@@ -1,22 +1,22 @@
 <div class="match-card">
 
-  <h1 class="match-card__heading">
+  <div class="match-card__heading">
     It´s a creators match!
-  </h1>
+  </div>
 
   <div class="match-card__users">
      <div class="match-card__user">
         <div class="match-card__image-wrapper" style="background-image: url(<%= user.photo.url %>)">
         </div>
 
-        <p class="match-card__user-name">
+        <div class="match-card__user-name">
           <%= user.first_name %>
-          <%= user.last_name %>
-        </p>
+          <%= user.last_name %>,
+        </div>
 
-        <p class="match-card__user-title">
+        <div class="match-card__user-title">
           <%= user.title %>
-        </p>
+        </div>
 
      </div>
 
@@ -24,14 +24,14 @@
         <div class="match-card__image-wrapper match-card__image-wrapper--right" style="background-image: url(<%= user2.photo.url %>)">
         </div>
 
-        <p class="match-card__user-name">
+        <div class="match-card__user-name">
           <%= user2.first_name %>
-          <%= user2.last_name %>
-        </p>
+          <%= user2.last_name %>,
+        </div>
 
-        <p class="match-card__user-title">
+        <div class="match-card__user-title">
          <%= user2.title %>
-        </p>
+        </div>
      </div>
   </div>
 
@@ -41,7 +41,7 @@
     <% end %>
 
 
-    <%= link_to "Back to swiping", users_path, class: "match-card__skip-button" %>
+    <%= link_to "Back to swiping", users_path, class: "btn btn-primary btn-block border" %>
   </div>
 </div>
 

@@ -18,7 +18,7 @@ class ChatroomsController < ApplicationController
   def create
     @match = Match.find(params[:match_id])
     matcher = User.find(@match.matcher_id)
-    matched =User.find(@match.matched_id)
+    matched = User.find(@match.matched_id)
     room = Chatroom.new(matcher: matcher, matched: matched)
     if room.save
       redirect_to chatroom_path(room)

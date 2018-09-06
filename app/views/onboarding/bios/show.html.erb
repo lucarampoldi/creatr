@@ -1,31 +1,33 @@
-
-
-<div class="container-onboarding-bio">
+<div class="onboarding-wrapper">
  <div class="onboarding-heading text-center">
-    <h1 class="onboarding-title">Your Bio</h1>
+    <h1 class="onboarding-title">Step 3: Bio</h1>
     <p class="onboarding-description no-padding">
-      Hello, stranger!
+      Keep it short but interesting 😉
     </p>
   </div>
 
   <%#= Bio form %>
   <div class="row">
-    <div class="col-xs-12">
-      <%= simple_form_for(@user, url: onboarding_bio_path(@user)) do |f| %>
-          <%= f.input :description,
-                      as: :text,
-                      label: "Bio",
-                      input_html: {
-                        style: "width: 335px; height: 119px;",
-                        maxlength: 150,
-                        size: 40,
-                        value: f.object.description,
-                        placeholder: "What's your story and what are you looking for on creatr?", class: "placeholder-bio"
-                      }
-          %>
-          <%= f.submit "Proceed to skills", class: "button btn btn-primary btn-block gradient" %>
-      <% end %>
-      <%= link_to "back to avatar", onboarding_avatars_path, class: "onboarding-link" %>
+    <div class="col-xs-10 col-xs-offset-1">
+        <div class="onboarding-form-wrapper">
+          <%= simple_form_for(@user, url: onboarding_bio_path(@user)) do |f| %>
+              <%= f.input :description,
+                          as: :text,
+                          label: "Bio",
+                          input_html: {
+                            maxlength: 150,
+                            size: 40,
+                            value: f.object.description,
+                            placeholder: "What do you do? And what are you looking for?",
+                            class: "textarea-bio"
+                          }
+              %>
+          <div class="onboarding-bottom-area">
+            <%= f.submit "Proceed to skills", class: "button btn btn-primary btn-block gradient mobile-large" %>
+          <% end %>
+            <%= link_to "back to avatar", onboarding_avatars_path, class: "onboarding-link" %>
+          </div>
+        </div>
     </div>
   </div>
 </div>

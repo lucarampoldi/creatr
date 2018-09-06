@@ -1,34 +1,33 @@
 <div class="container-signup-page">
-
-
     <div class="sign-up-title">
       <h2>Sign up</h2>
     </div>
 
-  <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-    <%= f.error_notification %>
+  <div class="onboarding-form-wrapper">
+    <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= f.error_notification %>
 
 
-    <div class="form-inputs">
-      <%= f.input :email,
-                  required: false,
-                  autofocus: true ,
-                  input_html: { autocomplete: "email" }%>
-      <%= f.input :password,
+      <div class="form-inputs">
+        <%= f.input :email,
+                    required: false,
+                    autofocus: true ,
+                    input_html: { autocomplete: "email" }%>
+        <%= f.input :password,
 
-                  required: false,
-                  hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
-                  input_html: { autocomplete: "new-password" } %>
-      <%= f.input :password_confirmation,
-                  required: false,
-                  input_html: { autocomplete: "new-password" } %>
-    </div>
+                    required: false,
+                    hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
+                    input_html: { autocomplete: "new-password" } %>
+        <%= f.input :password_confirmation,
+                    required: false,
+                    input_html: { autocomplete: "new-password" } %>
+      </div>
 
-    <div class="form-actions">
-      <%= f.button :submit, "Sign up", class: "btn btn-primary btn-block gradient" %>
-    </div>
-  <% end %>
-
-  <%= render "devise/shared/links" %>
+      <div class="form-actions onboarding-bottom-area">
+        <%= f.button :submit, "Sign up", class: "btn btn-primary btn-block gradient mobile-large" %>
+        <%= render "devise/shared/links" %>
+      </div>
+    <% end %>
+  </div>
 
 </div>

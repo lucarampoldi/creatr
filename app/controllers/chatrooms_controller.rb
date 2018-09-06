@@ -1,6 +1,6 @@
 class ChatroomsController < ApplicationController
   def index
-    @chatrooms = Chatroom.all
+    @chatrooms = current_user.chatrooms
   end
 
   def show
@@ -8,22 +8,14 @@ class ChatroomsController < ApplicationController
     @user = current_user
   end
 
- def index
-    @chatrooms = current_user.chatrooms
-    # @matches1 = Match.where(matcher_id: current_user.id)
-    # @matches2 = Match.where(matched_id: current_user.id)
-    # @matches = @matches1 + @matches2
-  end
-
   def create
     @match = Match.find(params[:match_id])
     matcher = User.find(@match.matcher_id)
     matched = User.find(@match.matched_id)
-    room = Chatroom.new(matcher: matcher, matched: matched)
-    if room.save
-      redirect_to chatroom_path(room)
-    else
-      # TODO send it back
-    end
+
+    room = Chatroom.find_by(matcher: matcher, matched: matched)
+    room ||= Chatroom.create(matcher: matcher, matched: matched)
+
+    redirect_to chatroom_path(room)
   end
 end

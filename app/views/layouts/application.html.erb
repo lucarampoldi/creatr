@@ -12,13 +12,17 @@
   <body>
 
     <% if controller_name == "users" %>
-      <%= render "shared/index-navbar" %>
-      <% elsif controller_name == "chatrooms" %>
-        <% if params[:action] == 'index' %>
-          <%= render "shared/chatroom-navbar" %>
-        <% else params[:action] == 'show' %>
-          <%= render "shared/chat-navbar" %>
-       <% end %>
+      <% if params[:action] == 'edit'  %>
+        <%= render 'shared/edit-navbar' %>
+      <% else %>
+        <%= render "shared/index-navbar" %>
+      <% end %>
+    <% elsif controller_name == "chatrooms" %>
+      <% if params[:action] == 'index' %>
+        <%= render "shared/chatroom-navbar" %>
+      <% else params[:action] == 'show' %>
+        <%= render "shared/chat-navbar" %>
+      <% end %>
     <% else  %>
       <%= render "shared/navbar-onboarding" %>
     <% end %>

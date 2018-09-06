@@ -1,18 +1,20 @@
 <div class="navbar-wagon">
   <!-- Logo -->
-
 <!-- Navbar right-side links -->
   <% if user_signed_in? %>
-
     <div class="navbar-wagon-item">
       <%= link_to chatrooms_path, class: "navbar-wagon-brand" do %>
         <i class="fas fa-chevron-left" style="color: #7B7979"></i>
       <% end %>
     </div>
-
+    <div class="navbar-wagon-item">
+      <%= link_to users_path, class: "navbar-wagon-brand" do %>
+        <%= image_tag "logo.png", height: 50 %>
+      <% end %>
+    </div>
     <div class="navbar-wagon-item">
       <%= link_to chatrooms_path do %>
-        <i class="fas fa-comment" style="color: #53D5C7"></i>
+        <i class="fas fa-comment" style="color: #7B7979"></i>
       <% end %>
     </div>
   <% else %>

@@ -1,60 +1,57 @@
 
-<div class="container-onboarding-bio">
+<div class="onboarding-wrapper">
+  <div class="onboarding-heading text-center">
+    <h1 class="onboarding-title">Step 4: Skills</h1>
+    <p class="onboarding-description no-padding">
+      What are your skills? 👨‍🎨👷‍♀️
+    </p>
+  </div>
+
   <div class="row">
     <div class="col-xs-10 col-xs-offset-1">
-      <div class="onboarding-heading text-center">
-        <h1 class="onboarding-title">Skills</h1>
-        <p class="onboarding-description no-padding">
-          What are your skills?
-        </p>
+      <div class="onboarding-form-wrapper">
+        <%= simple_form_for(@user, url: onboarding_skill_path(@user)) do |f| %>
+            <%= f.input :skill_list,
+                        label: false,
+                        input_html: {
+                          value: f.object.skill_list.join(", "),
+                          placeholder: "Tech, Startups...",
+                          data: {
+                            list: Skill.pluck(:title).join(","),
+                            multiple: ""
+                          },
+                          class: "skill-list-input"
+                        }
+            %>
+            <p class="prompt text-center">
+             And where can we find you online? 👩🏽‍💻
+            </p>
+
+            <%= f.input :github_url,
+                        label: "Github Url",
+                        input_html: {
+                          value: f.object.github_url,
+                        }
+            %>
+            <%= f.input :dribbble_url,
+                        label: "Dribbble Url",
+                        input_html: {
+                          value: f.object.dribbble_url,
+                        }
+            %>
+            <%= f.input :linkedin_url,
+                        label: "Linkedin Url",
+                        input_html: {
+                          value: f.object.linkedin_url,
+                        }
+            %>
+            <div class="onboarding-bottom-area-unfixed">
+              <%= f.submit "Proceed to goals", class: "btn btn-primary btn-block gradient mobile-large" %>
+              <%= link_to "back to bio", onboarding_bios_path, class: "onboarding-link" %>
+          </div>
+        <% end %>
+
       </div>
-
-  <%#= Bio form %>
-
-      <%= simple_form_for(@user, url: onboarding_skill_path(@user)) do |f| %>
-          <%= f.input :skill_list,
-                    label: false,
-                    input_html: {
-                      style: "width: 272px; height: 40px;",
-                      value: f.object.skill_list.join(", "),
-                      placeholder: "Tech, Startups...",
-                      data: {
-                        list: Skill.pluck(:title).join(","),
-                        multiple: ""
-                      }
-                    }
-        %>
-          <p class="onboarding-description no-padding">
-           Where can we find you online?
-          </p>
-
-         <%= f.input :github_url,
-                      as: :text,
-                      label: "Github Url",
-                      input_html: {
-                        style: "height: 40px;",
-                        value: f.object.github_url,
-                    }
-        %>
-         <%= f.input :dribbble_url,
-                      as: :text,
-                      label: "Dribbble Url",
-                      input_html: {
-                        style: "height: 40px;",
-                        value: f.object.dribbble_url,
-                    }
-        %>
-        <%= f.input :linkedin_url,
-                      as: :text,
-                      label: "Linkedin Url",
-                      input_html: {
-                        style: "height: 40px",
-                        value: f.object.linkedin_url,
-                    }
-        %>
-        <%= f.submit "Proceed to goals", class: "btn btn-primary btn-block gradient" %>
-      <% end %>
-      <%= link_to "back to bio", onboarding_bios_path, class: "onboarding-link" %>
     </div>
   </div>
 </div>

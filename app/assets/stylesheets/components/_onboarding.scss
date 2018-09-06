@@ -1,14 +1,18 @@
+.onboarding-wrapper {
+  padding-top: 20px;
+}
+
 .onboarding-bottom-area {
   position: fixed;
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 20px;
+  padding: 32px;
 }
 
 .onboarding-bottom-area-unfixed {
   width: 100%;
-  padding: 10px 0;
+  padding: 10px 0 40px 0;
 }
 
 .onboarding-form-wrapper {
@@ -16,13 +20,68 @@
     color: black;
   }
 
-  input[type="text"] {
-    height: 40px !important;
+  textarea {
+    width: 100%;
     -webkit-appearance: none !important;
+  }
+
+  input[type="text"] {
+    -webkit-appearance: none !important;
+  }
+
+  input[type="url"] {
+    -webkit-appearance: none !important;
+  }
+
+  // Very very bad monkey patch
+  input.skill-list-input {
+    width: 82.5vw !important;
+    color: black;
+  }
+
+  .textarea-bio {
+    height: 30vh;
+  }
+
+  .prompt {
+    font-size: 1em;
+    padding: 10px 0;
   }
 
   input::placeholder {
     /* Most modern browsers support this now. */
     color: #d3d3db !important;
+  }
+
+  textarea::placeholder {
+    /* Most modern browsers support this now. */
+    color: #d3d3db !important;
+  }
+}
+
+#goals-checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  justify-content: flex-start;
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  label {
+    margin: 5px;
+    border-radius: 200px;
+    font-size: 14px;
+    padding: 12px 22px;
+    background-color: white;
+    color: rgb(100, 100, 100);
+    border: 1px solid #27cacf;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.07), 0 1px 0 0 rgba(0, 0, 0, 0.03);
+  }
+
+  input[type="checkbox"]:checked ~ label[for^="user_goal_list"] {
+    background-color: #27cacf;
+    color: white;
   }
 }

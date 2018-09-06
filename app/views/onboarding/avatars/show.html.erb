@@ -1,33 +1,34 @@
-
-
-<div class="container">
+<div class="onboarding-wrapper">
   <div class="onboarding-heading text-center">
-    <h1 class="onboarding-title">Upload Avatar</h1>
+    <h1 class="onboarding-title">Step 2: Upload Avatar</h1>
     <p class="onboarding-description">
-      Hello, handsome!
+      Hello, handsome! 😍
     </p>
   </div>
   <div class="avatar-wrapper">
     <img class="onboarding_avatar" id="albert-pic">
-
-
-
     </img>
   </div>
   <%#= Avatar form %>
   <div class="row">
     <div class="col-xs-10 col-xs-offset-1">
 
-      <%= simple_form_for(@user, url: onboarding_avatar_path(@user)) do |f| %>
-        <%= f.input :photo, input_html: {onchange: "readURL(this)"} %>
-        <%= f.input :photo_cache, as: :hidden %>
-        <%= f.submit "Proceed to bio", class: " button btn btn-primary btn-block gradient"  %>
-      <% end %>
-      <%= link_to "back to personal info", onboarding_infos_path, class: "onboarding-link" %>
+      <div class="onboarding-form-wrapper">
+        <%= simple_form_for(@user, url: onboarding_avatar_path(@user)) do |f| %>
+          <%= f.input :photo, input_html: {onchange: "readURL(this)"} %>
+          <%= f.input :photo_cache, as: :hidden %>
+
+        <div class="onboarding-bottom-area">
+
+          <%= f.submit "Proceed to bio", class: " button btn btn-primary btn-block gradient mobile-large"  %>
+        <% end %>
+        <%= link_to "back to personal info", onboarding_infos_path, class: "onboarding-link" %>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
-
 
 <script>
   function readURL(input) {

@@ -1,30 +1,30 @@
 
-<div class="container">
+<div class="onboarding-wrapper">
   <div class="onboarding-heading text-center">
-    <h1 class="onboarding-title">Your goals</h1>
+    <h1 class="onboarding-title">Final step: Goals 🎉</h1>
     <p class="onboarding-description">
-      What can we do for you?
+      What are you looking for?
     </p>
   </div>
 
   <%#= Avatar form %>
   <div class="row">
-    <div class="col-xs-12">
-      <%= simple_form_for(@user, url: onboarding_goal_path(@user)) do |f| %>
-        <div id="goals-checkboxes">
-          <div class="input-checkbox-wrapper">
-
+    <div class="col-xs-10 col-xs-offset-1">
+      <div class="onboarding-form-wrapper">
+        <%= simple_form_for(@user, url: onboarding_goal_path(@user)) do |f| %>
+          <div id="goals-checkboxes">
             <%= f.collection_check_boxes :goal_list,
-              Goal.all.pluck(:id, :title), :last, :last, class: "hello"
-                %>
+                                        Goal.all.pluck(:id, :title),
+                                        :last,
+                                        :last
+            %>
           </div>
-        </div>
-          <%= f.submit "Start Matching", class: "btn btn-primary btn-block gradient" %>
-        </div>
-      <% end %>
-      <%= link_to "back to skills", onboarding_skills_path, class: "onboarding-link" %>
-
+          <div class="onboarding-bottom-area">
+            <%= f.submit "Start Matching", class: "btn btn-primary btn-block gradient mobile-large" %>
+            <%= link_to "back to skills", onboarding_skills_path, class: "onboarding-link" %>
+          </div>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>
-

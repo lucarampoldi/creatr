@@ -1,12 +1,39 @@
 <div class="container-landing-image">
-  <%= image_tag "landing.png" ,class: "landing-picture" %>
+  <%= image_tag "background.png" ,class: "landing-picture" %>
 </div>
+
+
+<div class="container_heading">
+    <h1 class="value-prop__header">Create your Network</h1>
+    <p class="value-prop__text"> Match with people who share your goals.</p>
+</div>
+
 
 <div class="call-to-action-container">
   <%=link_to "START MATCHING",  new_user_session_path, class: "btn btn-primary btn-block home-page-btn"%>
 </div>
 
+
+
 <div class="container">
-    <h1 class="value-prop__header">Match with people who share your goals.</h1>
-    <p class="value-prop__text">Explore our community of mentors, investors and employers to open up opportunities and kickstart projects.</p>
-</div>
+  <div class="row">
+   <!--  <div class="landing-title">
+      <h3>Creators cocreate in flow.</h3>
+    </div> -->
+    <div class="col-md-4">
+      <div class="values">
+        <h3>At a glance</h3>
+        <p>Meet peoples goals, skills and portfolios</p>
+        <%=image_tag("phone1.png", class: "value_image1")%>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="values">
+        <h3>Creators Match</h3>
+        <p>Create opportunities, solutions and projects</p>
+        <%=image_tag("phone2.png", class: "value_image2")%>
+      </div>
+    </div>
+
+

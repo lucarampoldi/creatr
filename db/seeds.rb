@@ -5,7 +5,7 @@ User.destroy_all
 Skill.destroy_all
 Goal.destroy_all
 
-u1 = User.create!(
+u4 = User.create!(
                 first_name:"Tom",
                 last_name:"Bachem",
                 photo: File.open(Rails.root + "app/assets/images/tombachem.png"),
@@ -34,6 +34,20 @@ u2 = User.create!(
                 github_url:"",
                 dribbble_url:""
                 )
+u6 = User.create!(
+                first_name:"Elliot",
+                last_name:"Callender",
+                photo:File.open(Rails.root + "app/assets/images/foundercompress.jpg"),
+                email:"elliot@example.com",
+                password:"123456",
+                title:"Product Owner",
+                description:"Hiring data-analysts for an image recognition project. Sustainability.",
+                location:"Berlin, Germany",
+                industry:"Software & IT",
+                linkedin_url:"https://www.linkedin.com/in/elliott-callender/",
+                github_url:"https://github.com/impactpractise/",
+                dribbble_url:"https://dribbble.com/Luizzaly"
+                )
 
 u3 = User.create!(
                 first_name:"Mohamed",
@@ -50,7 +64,7 @@ u3 = User.create!(
                 dribbble_url:"https://dribbble.com/Luizzaly"
                 )
 
-u4 = User.create!(
+u1 = User.create!(
                 first_name:"Samson",
                 last_name:"Williams",
                 photo:File.open(Rails.root + "app/assets/images/u4.jpeg"),
@@ -80,20 +94,6 @@ u5 = User.create!(
                 dribbble_url:"https://dribbble.com/Luizzaly"
                 )
 
-u6 = User.create!(
-                first_name:"Elliot",
-                last_name:"Callender",
-                photo:File.open(Rails.root + "app/assets/images/foundercompress.jpg"),
-                email:"elliot@example.com",
-                password:"123456",
-                title:"Product Owner",
-                description:"Hiring data-analysts for an image recognition project. Sustainability.",
-                location:"Berlin, Germany",
-                industry:"Software & IT",
-                linkedin_url:"https://www.linkedin.com/in/elliott-callender/",
-                github_url:"https://github.com/impactpractise/",
-                dribbble_url:"https://dribbble.com/Luizzaly"
-                )
 
 u7 = User.create!(
                 first_name:"Mack",
@@ -360,7 +360,7 @@ goal_name.each {|name| Goal.create!(title: name)}
 
 #U1
 u1.skill_list = ["Strategic Partnerships","Leadership","Tech Entrepreneur","Education"]
-u1.goal_list = ["Invest in Project","Mentor Others","Hire"]
+u1.goal_list = ["Invest in Project","Mentor Others"]
 u1.save!
 
 #U2
@@ -375,7 +375,7 @@ u3.save!
 
 #u4
 u4.skill_list = ["Financial services","Business Analyst","Growth Hacking","Fundraising","Recruitment"]
-u4.goal_list = ["Invest in Project","Mentor Others"]
+u4.goal_list = ["Invest in Project","Mentor Others","Hire"]
 u4.save!
 
 #u5

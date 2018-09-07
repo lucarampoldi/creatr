@@ -20,7 +20,7 @@ u4 = User.create!(
                 dribbble_url:"https://dribbble.com/Luizzaly"
                 )
 
-u2 = User.create!(
+u3 = User.create!(
                 first_name:"Jan",
                 last_name:"Carbonell",
                 photo: File.open(Rails.root + "app/assets/images/jan.jpg"),
@@ -34,7 +34,7 @@ u2 = User.create!(
                 github_url:"",
                 dribbble_url:""
                 )
-u6 = User.create!(
+u2 = User.create!(
                 first_name:"Elliot",
                 last_name:"Callender",
                 photo:File.open(Rails.root + "app/assets/images/foundercompress.jpg"),
@@ -365,13 +365,14 @@ u1.save!
 
 #U2
 u2.skill_list = ["Product Management","Leadership","Community Management","Collaboration Hacks","Design Thinking"]
-u2.goal_list = ["Get Hired","Find a Mentor"]
+u2.goal_list = ["Mentor Others","Get Hired"]
 u2.save!
 
 #U3
 u3.skill_list = ["Ruby","Python","Hackathon","Tech Entrepreneur","Teaching"]
-u3.goal_list = ["Mentor Others","Get Hired"]
+u3.goal_list = ["Get Hired","Find a Mentor"]
 u3.save!
+
 
 #u4
 u4.skill_list = ["Financial services","Business Analyst","Growth Hacking","Fundraising","Recruitment"]

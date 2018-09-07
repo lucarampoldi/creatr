@@ -1,5 +1,6 @@
 Like.destroy_all
 Match.destroy_all
+Chatroom.destroy_all
 User.destroy_all
 Skill.destroy_all
 Goal.destroy_all

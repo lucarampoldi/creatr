@@ -5,13 +5,13 @@ User.destroy_all
 Skill.destroy_all
 Goal.destroy_all
 
-u4 = User.create!(
+u1 = User.create!(
                 first_name:"Tom",
                 last_name:"Bachem",
                 photo: File.open(Rails.root + "app/assets/images/tombachem.png"),
                 email:"tom@example.com",
                 password:"123456",
-                title:"Serial Entrepreneur, Founder, Investor",
+                title:"Cancellor of CODE University",
                 description:"Serial entrepreneur and investor. Investing in founding teams and projects. ",
                 location:"Berlin, Germany",
                 industry:"Software, Digital Products",
@@ -20,7 +20,7 @@ u4 = User.create!(
                 dribbble_url:"https://dribbble.com/Luizzaly"
                 )
 
-u3 = User.create!(
+u2 = User.create!(
                 first_name:"Jan",
                 last_name:"Carbonell",
                 photo: File.open(Rails.root + "app/assets/images/jan.jpg"),
@@ -34,25 +34,11 @@ u3 = User.create!(
                 github_url:"",
                 dribbble_url:""
                 )
-u2 = User.create!(
-                first_name:"Elliot",
-                last_name:"Callender",
-                photo:File.open(Rails.root + "app/assets/images/foundercompress.jpg"),
-                email:"elliot@example.com",
-                password:"123456",
-                title:"Product Owner",
-                description:"Hiring data-analysts for an image recognition project. Sustainability.",
-                location:"Berlin, Germany",
-                industry:"Software & IT",
-                linkedin_url:"https://www.linkedin.com/in/elliott-callender/",
-                github_url:"https://github.com/impactpractise/",
-                dribbble_url:"https://dribbble.com/Luizzaly"
-                )
 
-u6 = User.create!(
+u3 = User.create!(
                 first_name:"Mohamed",
                 last_name:"Ibrahim",
-                photo:File.open(Rails.root + "app/assets/images/mo.jpg"),
+                photo:File.open(Rails.root + "app/assets/images/sales.jpg"),
                 email:"mo@example.com",
                 password:"123456",
                 title:"Fullstack Developer, Deep learning research assistant.",
@@ -64,7 +50,7 @@ u6 = User.create!(
                 dribbble_url:"https://dribbble.com/Luizzaly"
                 )
 
-u1 = User.create!(
+u4 = User.create!(
                 first_name:"Samson",
                 last_name:"Williams",
                 photo:File.open(Rails.root + "app/assets/images/u4.jpeg"),
@@ -94,6 +80,20 @@ u5 = User.create!(
                 dribbble_url:"https://dribbble.com/Luizzaly"
                 )
 
+u6 = User.create!(
+                first_name:"Elliot",
+                last_name:"Callender",
+                photo:File.open(Rails.root + "app/assets/images/foundercompress.jpg"),
+                email:"elliot@example.com",
+                password:"123456",
+                title:"Product Owner",
+                description:"Hiring data-analysts for an image recognition project. Sustainability.",
+                location:"Berlin, Germany",
+                industry:"Software & IT",
+                linkedin_url:"https://www.linkedin.com/in/elliott-callender/",
+                github_url:"https://github.com/impactpractise/",
+                dribbble_url:"https://dribbble.com/Luizzaly"
+                )
 
 u7 = User.create!(
                 first_name:"Mack",
@@ -113,7 +113,7 @@ u7 = User.create!(
 u8 = User.create!(
                 first_name:"Jules",
                 last_name:"Tremor",
-                photo:File.open(Rails.root + "app/assets/images/shirlez.jpg"),
+                photo:File.open(Rails.root + "app/assets/images/celine.jpg"),
                 email:"jules@example.com",
                 password:"123456",
                 title:"Product Manager",
@@ -127,11 +127,11 @@ u8 = User.create!(
 u9 = User.create!(
                 first_name:"Steve",
                 last_name:"Martin",
-                photo:File.open(Rails.root + "app/assets/images/steve.jpg"),
+                photo:File.open(Rails.root + "app/assets/images/stevecompress.jpg"),
                 email:"steve@example.com",
                 password:"123456",
                 title:"Student, Co-Founder",
-                description:"Data Science Start-up seeking for investement.",
+                description:"History major seeking to obtain investement for data-analysis startup",
                 location:"Manchester, UK",
                 industry:"Academics",
                 linkedin_url:"https://www.linkedin.com/in/elliott-callender/",
@@ -142,7 +142,7 @@ u9 = User.create!(
 u10 = User.create!(
                 first_name:"Shirley",
                 last_name:"Green",
-                photo:File.open(Rails.root + "app/assets/images/shirlez.jpg"),
+                photo:File.open(Rails.root + "app/assets/images/shirleycompress.jpg"),
                 email:"shirley@example.com",
                 password:"123456",
                 title:" Angel Investor",
@@ -240,14 +240,14 @@ u16 = User.create!(
                 dribbble_url:"https://dribbble.com/Luizzaly"
                 )
 u17 = User.create!(
-                first_name:"Charlie",
-                last_name:"Button",
-                photo:File.open(Rails.root + "app/assets/images/charlie.jpg"),
-                email:"charlie@example.com",
+                first_name:"Luciana",
+                last_name:"Battini",
+                photo:File.open(Rails.root + "app/assets/images/u17.jpeg"),
+                email:"luciana@example.com",
                 password:"123456",
-                title:"Investor, Public Relations",
-                description:"Portfolio Manager in a VC group in London",
-                location:"London, U.K",
+                title:"Investor",
+                description:"Portfolio Manager in a VC group at AFI, Italy",
+                location:"Milan, Italy",
                 industry:"Venture Capitalists",
                 linkedin_url:"",
                 github_url:"https://github.com/impactpractise/",
@@ -360,23 +360,22 @@ goal_name.each {|name| Goal.create!(title: name)}
 
 #U1
 u1.skill_list = ["Strategic Partnerships","Leadership","Tech Entrepreneur","Education"]
-u1.goal_list = ["Invest in Project","Mentor Others"]
+u1.goal_list = ["Invest in Project","Hire"]
 u1.save!
 
 #U2
 u2.skill_list = ["Product Management","Leadership","Community Management","Collaboration Hacks","Design Thinking"]
-u2.goal_list = ["Mentor Others","Get Hired"]
+u2.goal_list = ["Get Hired","Find a Mentor"]
 u2.save!
 
 #U3
 u3.skill_list = ["Ruby","Python","Hackathon","Tech Entrepreneur","Teaching"]
-u3.goal_list = ["Get Hired","Find a Mentor"]
+u3.goal_list = ["Mentor Others","Get Hired"]
 u3.save!
-
 
 #u4
 u4.skill_list = ["Financial services","Business Analyst","Growth Hacking","Fundraising","Recruitment"]
-u4.goal_list = ["Invest in Project","Mentor Others","Hire"]
+u4.goal_list = ["Invest in Project","Mentor Others"]
 u4.save!
 
 #u5

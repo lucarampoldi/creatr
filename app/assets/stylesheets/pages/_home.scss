@@ -1,5 +1,32 @@
 // Specific CSS for your home-page
 
+
+.container_landing{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content:center;
+}
+
+.landing_values{
+  color:#454545;
+  font-size: 35px;
+}
+
+
+.container_heading{
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: -273px;
+  margin-bottom: 139px;
+}
+
+
+
+
+
 .container-value-prop{
   display: flex;
   flex-direction: column;
@@ -29,15 +56,7 @@
 
 .values{
   margin-left:35;
-}
-.call-to-action-container{
-  margin: 40px;
-  margin-top: 120px;
-}
-
-.container-landing-image{
-  height: 300px;
-  width: 300px;
+  margin-top: 40px;
 }
 
 .landing-picture{
@@ -59,9 +78,47 @@ text-align: center;
 }
 
 .value_image1{
- max-width: 100%;
-display:block;
-height: auto;
-margin-left: 25px;
+  height: 400px;
+  margin-left: 70px;
 }
 
+.value_image2{
+  height: 409px;
+  margin-left: 54px;
+}
+
+.btn.home-page-btn {
+  background-color: none;
+  max-width: 200px;
+  margin: auto;
+  border-width: 2px;
+  color: #1ac2aa;
+  border-radius: 200px;
+  background: none;
+  border-color: #1ac2aa;
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+
+.landing-picture {
+  width: 100%;
+  margin-top: -45px;
+  height: 349px;
+}
+
+.value-prop__header {
+  font-size: 40px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  color: #454545;
+  width: 300px;
+  margin-top: 11px;
+  margin-left: 10px;
+}
+
+
+.value-prop__text {
+  font-size: 21px;
+  margin-left: 10px;
+  width: 300px;
+}

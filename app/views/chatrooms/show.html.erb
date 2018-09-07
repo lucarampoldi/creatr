@@ -6,25 +6,24 @@
   <div class="row">
     <div class="col-sm-6 col-sm-offset-3">
       <div class="chat-header">
+        <div class="chat-name">
+          <%= other_user.first_name%>
+        </div>
 
-          <div class="chat-name">
-            <%= other_user.first_name%>
-          </div>
+        <div class="chat-image">
+          <%= link_to user_path(other_user) do %>
+          <%= cl_image_tag other_user.photo, class: "chat-header-image"%>
+          <% end %>
+        </div>
 
-          <div class="chat-image">
-            <%= link_to user_path(other_user) do %>
-            <%= cl_image_tag other_user.photo, class: "chat-header-image"%>
-            <% end %>
-          </div>
-
-          <div class="chat-title">
-            <%= other_user.title%>
-          </div>
+        <div class="chat-title">
+          <%= other_user.title%>
+        </div>
       </div>
 
       <div class="messages">
         <% @chatroom.messages.each do |message| %>
-          <%= render "messages/message", message: message, user_is_messages_author: message.user == current_user, user: @user %>
+          <%= render "messages/message", message: message, user_is_messages_author: message.user == @user, user: @user %>
         <% end %>
       </div>
 
@@ -46,24 +45,21 @@
 
 <% content_for :after_js do %>
     <script>
-    App['chatroom_<%= @chatroom.id %>'] =
-    App.cable.subscriptions.create(
-      { channel: 'ChatroomsChannel',
-       chatroom_id: <%= @chatroom.id %> },
-      {
-        received: (data) => {
-            var messagesContainer = document.querySelector('.messages');
-            messagesContainer.insertAdjacentHTML('beforeend', data.message_partial);
-            scrollLastMessageIntoView();
-            var messageContent = document.querySelector('.message_content textarea');
-            messageContent.value = ""
-        }
-       }
-
+      scrollLastMessageIntoView();
+      App['chatroom_<%= @chatroom.id %>'] =
+      App.cable.subscriptions.create(
+        { channel: 'ChatroomsChannel',
+         chatroom_id: <%= @chatroom.id %>
+        },
+        {
+          received: (data) => {
+              if (data.current_user_id !== <%= current_user.id %>) {
+                const messagesContainer = document.querySelector('.messages');
+                messagesContainer.insertAdjacentHTML('beforeend', data.message_partial);
+                scrollLastMessageIntoView();
+              }
+            }
+         }
       )
-              // if (data.current_user_id !== <%= current_user.id %>) {
-          //   var messagesContainer = document.querySelector('.messages');
-          //   messagesContainer.insertAdjacentHTML('beforeend', data.message_partial);
-          //   scrollLastMessageIntoView();
   </script>
 <% end %>

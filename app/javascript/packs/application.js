@@ -9,4 +9,4 @@ import "../components/index-cards";
 import "../components/show-card";
 
 enableTagInput();
-toggleColor();
+// toggleColor();

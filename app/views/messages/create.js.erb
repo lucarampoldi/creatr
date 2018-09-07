@@ -1,1 +1,5 @@
 document.getElementById("new_message").reset()
+var messagesContainer = document.querySelector('.messages');
+var messageHtml = '<%= j render "messages/message", message: @message, user_is_messages_author: @message.user == current_user, user: @message.user %>'
+messagesContainer.insertAdjacentHTML('beforeend', messageHtml);
+scrollLastMessageIntoView();

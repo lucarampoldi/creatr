@@ -49,7 +49,7 @@ u2 = User.create!(
                 dribbble_url:"https://dribbble.com/Luizzaly"
                 )
 
-u3 = User.create!(
+u6 = User.create!(
                 first_name:"Mohamed",
                 last_name:"Ibrahim",
                 photo:File.open(Rails.root + "app/assets/images/mo.jpg"),
